@@ -12,7 +12,7 @@ namespace Card
         Special,
         Information
     }
-    [CreateAssetMenu(menuName = "SciptableObjects/Card")]
+    [CreateAssetMenu(menuName = "ScriptableObjects/Card")]
     public class CardDefinition : ScriptableObject
     {
         public CardType Type;
