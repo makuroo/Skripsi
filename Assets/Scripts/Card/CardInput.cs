@@ -1,3 +1,5 @@
+using System;
+
 namespace Card
 {
     using DG.Tweening;
@@ -9,7 +11,12 @@ namespace Card
         [SerializeField] private float _maxZRotation;
         private Vector3 _initialPosition;
         private CardTemplate _cardTemplate;
-        
+
+        private void Awake()
+        {
+            _cardTemplate = GetComponent<CardTemplate>();
+        }
+
         public void OnDrag(PointerEventData eventData)
         {
             transform.localPosition = new Vector3(transform.localPosition.x + eventData.delta.x, transform.localPosition.y);
@@ -29,11 +36,11 @@ namespace Card
             {
                 if (transform.localPosition.x >= 500)
                 {
-                    _cardTemplate.ActivateLeftStrategy();
+                    _cardTemplate.ActivateRightStrategy();
                 }
                 else
                 {
-                    _cardTemplate.ActivateRightStrategy();
+                    _cardTemplate.ActivateLeftStrategy();
                 }
                 Destroy(gameObject);
             }
