@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 
 namespace Card
 {
@@ -20,7 +21,13 @@ namespace Card
         public void OnDrag(PointerEventData eventData)
         {
             transform.localPosition = new Vector3(transform.localPosition.x + eventData.delta.x, transform.localPosition.y);
-            var zRot = (0-transform.localPosition.x) * _maxZRotation;
+            if (transform.localPosition.x < 0)
+            {
+                var color = _cardTemplate.LeftOptionText.color;
+                color.a = Mathf.Abs(transform.localPosition.x) / 255;
+                _cardTemplate.LeftOptionText.color = color;
+            }
+            var zRot = (-transform.localPosition.x/500) * _maxZRotation;
         
             transform.DOLocalRotate(new Vector3(0, 0, Mathf.Clamp(zRot, -_maxZRotation, _maxZRotation)), .2f);
         }
@@ -47,6 +54,15 @@ namespace Card
         
             transform.localPosition = _initialPosition;
             transform.DOLocalRotate(Vector3.zero, .2f);
+            
+            ResetTextOptionColor(_cardTemplate.LeftOptionText);
+        }
+
+        private void ResetTextOptionColor(TMP_Text text)
+        {
+            var color = text.color;
+            DOVirtual.Color(color, new Color(0, 0, 0,0), .2f,
+                (value)=>text.color=value);
         }
     }
 }

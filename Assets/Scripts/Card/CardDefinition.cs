@@ -17,6 +17,7 @@ namespace Card
     {
         public CardType Type;
         public string CardName;
+        [TextArea]
         public string CardDescription;
         public Sprite CardSprite;
         public EffectStrategy LeftEffect;
