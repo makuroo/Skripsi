@@ -34,6 +34,8 @@ namespace Manager
         [SerializeField] private SerializedDictionary<State, DeckData> _deckDictionary;
         
         [SerializeField] private List<CardDefinition> currentDeck = new();
+
+        private CardTemplate _currentHand;
         
         public List<CardDefinition> CurrentDeck
         {
@@ -72,10 +74,19 @@ namespace Manager
 
         private void InitializeCurrentCard()
         {
-            CardTemplate template = Instantiate(_cardPrefab, Vector3.zero, Quaternion.identity, _templateParent);
-            template.GetComponent<RectTransform>().anchoredPosition= Vector2.zero;
-            template.Definition = CurrentDeck[0];
-            template.Initialize();
+            if (_currentHand == null)
+            {
+                CardTemplate template = Instantiate(_cardPrefab, Vector3.zero, Quaternion.identity, _templateParent);
+                template.GetComponent<RectTransform>().anchoredPosition= Vector2.zero;
+                template.Definition = CurrentDeck[0];
+                template.Initialize();
+                _currentHand = template;
+            }
+            else
+            {
+                _currentHand.Definition = CurrentDeck[0];
+                _currentHand.Initialize();
+            }
         }
 
         private void ChangeDeck(State _currentState)
@@ -94,6 +105,8 @@ namespace Manager
             {
                 CurrentDeck.Insert(currDeckData.FixedCardsList[i].index,currDeckData.FixedCardsList[i].Card);
             }
+            
+            InitializeCurrentCard();
         }
     }
 }
