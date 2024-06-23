@@ -21,8 +21,8 @@ namespace Card
         [TextArea]
         public string CardDescription;
         public Sprite CardSprite;
-        public EffectStrategy LeftEffect;
-        public EffectStrategy RightEffect;
+        public CardEffect LeftEffect;
+        public CardEffect RightEffect;
 
         public bool Equals(CardDefinition other)
         {
