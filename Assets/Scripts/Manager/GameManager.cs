@@ -19,7 +19,10 @@ namespace Manager
 
     public enum ScoresEnum
     {
-        Burnout,
+        ArtistBurnout,
+        DesignerBurnout,
+        ProgrammerBurnout,
+        SoundEngineerBurnout,
         VisualScore,
         GameplayScore,
         TechnicalScore,

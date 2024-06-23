@@ -289,9 +289,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardPrefab: {fileID: 629612288870378209, guid: 0073d95cac69ba446ab80573c1204931, type: 3}
   _templateParent: {fileID: 473279515}
+  _cardDescriptionText: {fileID: 62827545}
   _deckDictionary:
     _serializedList:
     - Key: 0
+      Value:
+        TotalCards: 0
+        FixedCardsCount: 0
+        FixedCardsList: []
   currentDeck: []
 --- !u!4 &112943873
 Transform:
@@ -301,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112943871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 440.2, y: 193, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -598,6 +603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006983297}
+  - component: {fileID: 1006983298}
   m_Layer: 0
   m_Name: GameDatabase
   m_TagString: Untagged
@@ -613,13 +619,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006983296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 440.2, y: 193, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1006983298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006983296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5532480ef41683348bf9a95bf4683a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cardPool: []
 --- !u!1 &1069564803
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +758,12 @@ MonoBehaviour:
       Value: 0
     - Key: 9
       Value: 0
+    - Key: 10
+      Value: 0
+    - Key: 11
+      Value: 0
+    - Key: 12
+      Value: 0
 --- !u!4 &1123682846
 Transform:
   m_ObjectHideFlags: 0
@@ -802,10 +827,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
