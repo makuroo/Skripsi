@@ -48,13 +48,13 @@ namespace Manager
 
         private void OnEnable()
         {
-            CardInput.OnUsedCard += UpdateDeck;
+            CardSwipe.OnUsedCard += UpdateDeck;
             GameManager.OnStageChange += ChangeDeck;
         }
 
         private void OnDisable()
         {
-            CardInput.OnUsedCard -= UpdateDeck;
+            CardSwipe.OnUsedCard -= UpdateDeck;
             GameManager.OnStageChange -= ChangeDeck;
         }
 
@@ -64,12 +64,26 @@ namespace Manager
             InitializeCurrentCard();
         }
 
-        private void UpdateDeck()
+        private void UpdateDeck(bool isSwipeLeft)
         {
-            if(CurrentDeck.Count==0)
-                GameManager.Instance.NextStage();
+            if (isSwipeLeft)
+            {
+                _currentHand.ActivateRightStrategy();
+                Destroy(_currentHand);
+            }
+            else
+            {
+                _currentHand.ActivateLeftStrategy();
+                Destroy(_currentHand);
+            }
             
             CurrentDeck.RemoveAt(0);
+            if (CurrentDeck.Count == 0)
+            {
+                GameManager.Instance.NextStage();
+                return;
+            }
+            
             InitializeCurrentCard();
         }
 

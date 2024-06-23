@@ -7,14 +7,14 @@ namespace Card
     using UnityEngine;
     using UnityEngine.EventSystems;
 
-    public class CardInput : MonoBehaviour, IDragHandler,IBeginDragHandler,IEndDragHandler
+    public class CardSwipe : MonoBehaviour, IDragHandler,IBeginDragHandler,IEndDragHandler
     {
         [SerializeField] 
         private float _maxZRotation;
         private Vector3 _initialPosition;
         private CardTemplate _cardTemplate;
 
-        public static Action OnUsedCard;
+        public static Action<bool> OnUsedCard;
 
         private void Awake()
         {
@@ -43,16 +43,7 @@ namespace Card
         {
             if (transform.localPosition.x is >= 500 or <= -500)
             {
-                if (transform.localPosition.x >= 500)
-                {
-                    _cardTemplate.ActivateRightStrategy();
-                }
-                else
-                {
-                    _cardTemplate.ActivateLeftStrategy();
-                }
-                OnUsedCard?.Invoke();
-                Destroy(gameObject);
+                OnUsedCard?.Invoke(transform.localPosition.x >= 500);
             }
         
             transform.localPosition = _initialPosition;
