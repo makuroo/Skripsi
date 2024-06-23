@@ -68,14 +68,15 @@ namespace Manager
         {
             if (isSwipeLeft)
             {
-                _currentHand.ActivateRightStrategy();
-                Destroy(_currentHand);
+                if(_currentHand.Definition.RightEffect)
+                    _currentHand.ActivateRightStrategy();
             }
             else
             {
-                _currentHand.ActivateLeftStrategy();
-                Destroy(_currentHand);
+                if(_currentHand.Definition.LeftEffect)
+                    _currentHand.ActivateLeftStrategy();
             }
+            Destroy(_currentHand);
             
             CurrentDeck.RemoveAt(0);
             if (CurrentDeck.Count == 0)
