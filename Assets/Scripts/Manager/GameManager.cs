@@ -8,13 +8,13 @@ namespace Manager
 {
     public enum State
     {
-        MarketResearch,
-        Initiation,
-        PreProduction,
-        Production,
-        Alpha,
-        Beta,
-        Release
+        MarketResearch=0,
+        Initiation=1,
+        PreProduction=2,
+        Production=3,
+        Alpha=4,
+        Beta=5,
+        Release=6
     }
 
     public enum ScoresEnum
@@ -37,6 +37,7 @@ namespace Manager
         [SerializeField] 
         private SerializedDictionary<ScoresEnum, int> _scoreDictionary = new();
         public static GameManager Instance { get; private set; }
+        public static Action<State> OnStageChange;
 
         private void Awake()
         {
@@ -52,6 +53,12 @@ namespace Manager
             {
                 _scoreDictionary[key] += changes[key];
             }
+        }
+
+        public void NextStage()
+        {
+            _currentState++;
+            OnStageChange?.Invoke(_currentState);
         }
     }
 }

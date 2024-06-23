@@ -23,12 +23,11 @@ namespace Card
         public void OnDrag(PointerEventData eventData)
         {
             transform.localPosition = new Vector3(transform.localPosition.x + eventData.delta.x, transform.localPosition.y);
-            if (transform.localPosition.x < 0)
-            {
-                var color = _cardTemplate.LeftOptionText.color;
-                color.a = Mathf.Abs(transform.localPosition.x) / 255;
-                _cardTemplate.LeftOptionText.color = color;
-            }
+            
+            OptionTextFade(transform.localPosition.x > 0
+                ? _cardTemplate.LeftOptionText
+                : _cardTemplate.RightOptionText);
+            
             var zRot = (-transform.localPosition.x/500) * _maxZRotation;
         
             transform.DOLocalRotate(new Vector3(0, 0, Mathf.Clamp(zRot, -_maxZRotation, _maxZRotation)), .2f);
@@ -66,6 +65,13 @@ namespace Card
             var color = text.color;
             DOVirtual.Color(color, new Color(0, 0, 0,0), .2f,
                 (value)=>text.color=value);
+        }
+
+        private void OptionTextFade(TMP_Text text)
+        {
+            var color = text.color;
+            color.a = Mathf.Abs(transform.localPosition.x) / 255;
+            text.color = color;
         }
     }
 }

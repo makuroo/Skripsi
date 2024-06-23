@@ -11,17 +11,9 @@ namespace Card
         [SerializeField] private TMP_Text _rightOptionText;
         private Image _cardImage;
 
-        public TMP_Text LeftOptionText
-        {
-            get => _leftOptionText;
-            set => _leftOptionText = value;
-        }
+        public TMP_Text LeftOptionText => _leftOptionText;
 
-        public TMP_Text RightOptionText
-        {
-            get => _rightOptionText;
-            set => _rightOptionText = value;
-        }
+        public TMP_Text RightOptionText => _rightOptionText;
 
         public CardDefinition Definition
         {
@@ -34,7 +26,7 @@ namespace Card
             if(Definition.LeftEffect)
                 Definition.LeftEffect.Activate();
             else
-                Debug.Log("Left Strategy is empty");
+                Debug.LogError("Left Strategy is empty");
         }
 
         public void ActivateRightStrategy()
@@ -42,15 +34,27 @@ namespace Card
             if(Definition.RightEffect)
                 Definition.RightEffect.Activate();
             else
-                Debug.Log("Right Strategy is empty");
+                Debug.LogError("Right Strategy is empty");
         }
 
         public void Initialize()
         {
             _cardImage = GetComponent<Image>();
+            if (_cardDefinition.CardSprite == null)
+            {
+                Debug.LogError(_cardDefinition+" "+"card sprite is null");
+            }
             _cardImage.sprite = Definition.CardSprite;
+            if (_cardDefinition.LeftEffect == null)
+            {
+                Debug.LogError(_cardDefinition+" "+"left effect is null");
+            }
             LeftOptionText.text = Definition.LeftEffect.EffectName;
-            //RightOptionText.text = Definition.RightEffect.EffectName;
+            if (_cardDefinition.CardSprite == null)
+            {
+                Debug.LogError(_cardDefinition+" "+"right effect is null");
+            }
+            RightOptionText.text = Definition.RightEffect.EffectName;
         }
     }
 }
