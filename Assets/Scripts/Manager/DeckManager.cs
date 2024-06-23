@@ -3,7 +3,7 @@ using System.Linq;
 using AYellowpaper.SerializedCollections;
 using Card;
 using Database;
-using UnityEngine.Serialization;
+using TMPro;
 
 namespace Manager
 {
@@ -30,9 +30,10 @@ namespace Manager
     {
         [SerializeField] private CardTemplate _cardPrefab;
         [SerializeField] private Transform _templateParent;
-
+        [SerializeField] private TMP_Text _cardDescriptionText;
+        [Space(5)]
         [SerializeField] private SerializedDictionary<State, DeckData> _deckDictionary;
-        
+        [Space(5)]
         [SerializeField] private List<CardDefinition> currentDeck = new();
 
         private CardTemplate _currentHand;
@@ -80,11 +81,13 @@ namespace Manager
                 template.GetComponent<RectTransform>().anchoredPosition= Vector2.zero;
                 template.Definition = CurrentDeck[0];
                 template.Initialize();
+                _cardDescriptionText.text = template.Definition.CardDescription;
                 _currentHand = template;
             }
             else
             {
                 _currentHand.Definition = CurrentDeck[0];
+                _cardDescriptionText.text = _currentHand.Definition.CardDescription;
                 _currentHand.Initialize();
             }
         }
@@ -96,19 +99,17 @@ namespace Manager
             List<CardDefinition> exceptionCards = new ();
             for (int i = 0; i < currDeckData.FixedCardsCount; i++)
             {
-                exceptionCards.Add(currDeckData.FixedCardsList[i].Card);
+                exceptionCards.Add(Instantiate(currDeckData.FixedCardsList[i].Card));
             }
             
             var availableCards = GameDatabase.Instance.CardPool.Except(exceptionCards).ToList();
             CurrentDeck=availableCards.Take(currDeckData.TotalCards-currDeckData.FixedCardsCount).Distinct().ToList();
             for (int i = 0; i < currDeckData.FixedCardsCount; i++)
             {
-                CurrentDeck.Insert(currDeckData.FixedCardsList[i].index,currDeckData.FixedCardsList[i].Card);
+                CurrentDeck.Insert(currDeckData.FixedCardsList[i].index,Instantiate(currDeckData.FixedCardsList[i].Card));
             }
             
             InitializeCurrentCard();
         }
     }
 }
-
-

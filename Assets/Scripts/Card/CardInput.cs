@@ -9,7 +9,8 @@ namespace Card
 
     public class CardInput : MonoBehaviour, IDragHandler,IBeginDragHandler,IEndDragHandler
     {
-        [SerializeField] private float _maxZRotation;
+        [SerializeField] 
+        private float _maxZRotation;
         private Vector3 _initialPosition;
         private CardTemplate _cardTemplate;
 

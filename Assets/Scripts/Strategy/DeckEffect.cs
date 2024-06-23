@@ -11,7 +11,7 @@ namespace Strategy
         [SerializeField] private int _targetIndex;
         public override void Activate()
         {
-            DeckManager.Instance.CurrentDeck.Insert(_targetIndex, _cardToAdd);
+            DeckManager.Instance.CurrentDeck.Insert(_targetIndex, Instantiate(_cardToAdd));
         }
     }
 }
