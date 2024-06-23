@@ -13,6 +13,8 @@ namespace Card
         private Vector3 _initialPosition;
         private CardTemplate _cardTemplate;
 
+        public static Action OnUsedCard;
+
         private void Awake()
         {
             _cardTemplate = GetComponent<CardTemplate>();
@@ -49,6 +51,7 @@ namespace Card
                 {
                     _cardTemplate.ActivateLeftStrategy();
                 }
+                OnUsedCard?.Invoke();
                 Destroy(gameObject);
             }
         

@@ -23,28 +23,34 @@ namespace Card
             set => _rightOptionText = value;
         }
 
-        private void Awake()
+        public CardDefinition Definition
         {
-            _cardImage = GetComponent<Image>();
-            _cardImage.sprite = _cardDefinition.CardSprite;
-            LeftOptionText.text = _cardDefinition.LeftEffect.EffectName;
-            RightOptionText.text = _cardDefinition.RightEffect.EffectName;
+            get => _cardDefinition;
+            set => _cardDefinition = value;
         }
 
         public void ActivateLeftStrategy()
         {
-            if(_cardDefinition.LeftEffect)
-                _cardDefinition.LeftEffect.Activate();
+            if(Definition.LeftEffect)
+                Definition.LeftEffect.Activate();
             else
                 Debug.Log("Left Strategy is empty");
         }
 
         public void ActivateRightStrategy()
         {
-            if(_cardDefinition.RightEffect)
-                _cardDefinition.RightEffect.Activate();
+            if(Definition.RightEffect)
+                Definition.RightEffect.Activate();
             else
                 Debug.Log("Right Strategy is empty");
+        }
+
+        public void Initialize()
+        {
+            _cardImage = GetComponent<Image>();
+            _cardImage.sprite = Definition.CardSprite;
+            LeftOptionText.text = Definition.LeftEffect.EffectName;
+            //RightOptionText.text = Definition.RightEffect.EffectName;
         }
     }
 }
