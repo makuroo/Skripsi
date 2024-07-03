@@ -2,7 +2,8 @@ using UnityEngine;
 
 namespace Strategy
 {
-    public abstract class EffectStrategy : ScriptableObject
+    [System.Serializable]
+    public abstract class EffectStrategy 
     { 
         public abstract void Activate();
     }

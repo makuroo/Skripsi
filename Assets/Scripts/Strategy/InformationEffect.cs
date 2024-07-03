@@ -1,8 +1,9 @@
+using Manager;
 using UnityEngine;
 
 namespace Strategy
 {
-    [CreateAssetMenu(menuName = "ScriptableObjects/Strategy/InformationEffect")]
+    [System.Serializable]
     public class InformationEffect : EffectStrategy
     {
         [SerializeField] 
@@ -10,7 +11,7 @@ namespace Strategy
 
         public override void Activate()
         {
-            Instantiate(_informationPanel,Vector3.zero, Quaternion.identity);
+           Object.Instantiate(_informationPanel,Vector3.zero, Quaternion.identity);
         }
     }
 }

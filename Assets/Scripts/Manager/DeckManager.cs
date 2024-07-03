@@ -4,6 +4,7 @@ using AYellowpaper.SerializedCollections;
 using Card;
 using Database;
 using TMPro;
+using UnityEngine.Serialization;
 
 namespace Manager
 {
@@ -15,7 +16,7 @@ namespace Manager
     internal struct FixedCards
     {
         public CardDefinition Card;
-        public int index;
+        [FormerlySerializedAs("index")] public int Index;
     }
 
     [Serializable]
@@ -121,10 +122,26 @@ namespace Manager
             CurrentDeck=availableCards.Take(currDeckData.TotalCards-currDeckData.FixedCardsCount).Distinct().ToList();
             for (int i = 0; i < currDeckData.FixedCardsCount; i++)
             {
-                CurrentDeck.Insert(currDeckData.FixedCardsList[i].index,Instantiate(currDeckData.FixedCardsList[i].Card));
+                CurrentDeck.Insert(currDeckData.FixedCardsList[i].Index,Instantiate(currDeckData.FixedCardsList[i].Card));
             }
             
             InitializeCurrentCard();
+        }
+        public void InsertCardToDeck(State targetStateDeck,int index, CardDefinition card)
+        {
+            if (targetStateDeck == State.None)
+            {
+                currentDeck.Insert(index,card);
+            }
+            else
+            {
+                var newFixedCard = new FixedCards
+                {
+                    Index = index,
+                    Card = Instantiate(card)
+                };
+                _deckDictionary[targetStateDeck].FixedCardsList.Add(newFixedCard);
+            }
         }
     }
 }

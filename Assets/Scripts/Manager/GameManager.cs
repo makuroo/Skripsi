@@ -14,7 +14,8 @@ namespace Manager
         Production=3,
         Alpha=4,
         Beta=5,
-        Release=6
+        Release=6,
+        None=99
     }
 
     public enum ScoresEnum
@@ -60,6 +61,8 @@ namespace Manager
 
         public void NextStage()
         {
+            if (_currentState == State.Release) return;
+
             _currentState++;
             OnStageChange?.Invoke(_currentState);
         }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Strategy
 {
-    [CreateAssetMenu(menuName = "ScriptableObjects/Strategy/ScoreEffect")]
+    [System.Serializable]
     public class ScoreEffect : EffectStrategy
     {
         public SerializedDictionary<ScoresEnum, int> EffectedScore = new();

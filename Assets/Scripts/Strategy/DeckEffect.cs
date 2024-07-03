@@ -4,14 +4,15 @@ using UnityEngine;
 
 namespace Strategy
 {
-    [CreateAssetMenu(menuName = "ScriptableObjects/Strategy/DeckEffect")]
+    [System.Serializable]
     public class DeckEffect  : EffectStrategy
     {
         [SerializeField] private CardDefinition _cardToAdd;
         [SerializeField] private int _targetIndex;
+        [SerializeField] private State _targetState;
         public override void Activate()
         {
-            DeckManager.Instance.CurrentDeck.Insert(_targetIndex, Instantiate(_cardToAdd));
+            DeckManager.Instance.InsertCardToDeck(_targetState,_targetIndex,_cardToAdd);
         }
     }
 }

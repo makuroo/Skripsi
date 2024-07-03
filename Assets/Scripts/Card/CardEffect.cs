@@ -8,7 +8,9 @@ namespace Card
     public class CardEffect : ScriptableObject
     {
         public string EffectName;
-        [SerializeField] private List<EffectStrategy> _effectStrategies = new();
+        
+        [SerializeReference,SubclassSelector] 
+        private List<EffectStrategy> _effectStrategies=new();
 
         public void Activate()
         {
