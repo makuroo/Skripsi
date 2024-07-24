@@ -41,6 +41,13 @@ namespace Manager
         [SerializeField] 
         private SerializedDictionary<ScoresEnum, int> _scoreDictionary = new();
         public static GameManager Instance { get; private set; }
+
+        public State CurrentState
+        {
+            get => _currentState;
+            set => _currentState = value;
+        }
+
         public static Action<State> OnStageChange;
 
         private void Awake()
@@ -61,10 +68,10 @@ namespace Manager
 
         public void NextStage()
         {
-            if (_currentState == State.Release) return;
+            if (CurrentState == State.Release) return;
 
-            _currentState++;
-            OnStageChange?.Invoke(_currentState);
+            CurrentState++;
+            OnStageChange?.Invoke(CurrentState);
         }
     }
 }

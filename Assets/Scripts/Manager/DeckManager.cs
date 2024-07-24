@@ -62,6 +62,7 @@ namespace Manager
         private void Awake()
         {
             Instance = this;
+            ChangeDeck(GameManager.Instance.CurrentState);
             InitializeCurrentCard();
         }
 
@@ -117,8 +118,7 @@ namespace Manager
             {
                 exceptionCards.Add(Instantiate(currDeckData.FixedCardsList[i].Card));
             }
-            
-            var availableCards = GameDatabase.Instance.CardPool.Except(exceptionCards).ToList();
+            var availableCards = GameDatabase.Instance.CardPoolDictionary[_currentState].Except(exceptionCards).ToList();
             CurrentDeck=availableCards.Take(currDeckData.TotalCards-currDeckData.FixedCardsCount).Distinct().ToList();
             for (int i = 0; i < currDeckData.FixedCardsCount; i++)
             {
