@@ -294,10 +294,29 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value:
-        TotalCards: 0
-        FixedCardsCount: 0
-        FixedCardsList: []
-  currentDeck: []
+        TotalCards: 2
+        FixedCardsCount: 2
+        FixedCardsList:
+        - Card: {fileID: 11400000, guid: 881f2f3fbbbf15a458cef3ef22a71303, type: 2}
+          Index: 0
+        - Card: {fileID: 11400000, guid: 448c46d55c12b5d43ae6d880df78ef15, type: 2}
+          Index: 1
+    - Key: 1
+      Value:
+        TotalCards: 4
+        FixedCardsCount: 2
+        FixedCardsList:
+        - Card: {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
+          Index: 0
+        - Card: {fileID: 11400000, guid: 1d277aa2317c6364299b477ae8b33dd5, type: 2}
+          Index: 1
+  currentDeck:
+  - {fileID: 11400000, guid: 881f2f3fbbbf15a458cef3ef22a71303, type: 2}
+  - {fileID: 11400000, guid: 448c46d55c12b5d43ae6d880df78ef15, type: 2}
+  - {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
+  - {fileID: 11400000, guid: 1affc044f238c524b8f0102e5d92278c, type: 2}
+  - {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
+  - {fileID: 11400000, guid: 1d277aa2317c6364299b477ae8b33dd5, type: 2}
 --- !u!4 &112943873
 Transform:
   m_ObjectHideFlags: 0
@@ -638,7 +657,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5532480ef41683348bf9a95bf4683a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardPool: []
+  _cardPoolDictionary:
+    _serializedList:
+    - Key: 0
+      Value:
+      - {fileID: 11400000, guid: 881f2f3fbbbf15a458cef3ef22a71303, type: 2}
+      - {fileID: 11400000, guid: 448c46d55c12b5d43ae6d880df78ef15, type: 2}
+    - Key: 1
+      Value:
+      - {fileID: 11400000, guid: 1d277aa2317c6364299b477ae8b33dd5, type: 2}
+      - {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
+      - {fileID: 11400000, guid: 1affc044f238c524b8f0102e5d92278c, type: 2}
+      - {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
 --- !u!1 &1069564803
 GameObject:
   m_ObjectHideFlags: 0

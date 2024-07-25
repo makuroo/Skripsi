@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
+  m_Name: MarketResearchMethod_E2
+  m_EditorClassIdentifier: 
+  EffectName: 'Trend & Communities Survey  '
+  _effectStrategies:
+  - rid: 4723801588163936256
+  - rid: 4723801588163936259
+  references:
+    version: 2
+    RefIds:
+    - rid: 4723801588163936256
+      type: {class: ScoreEffect, ns: Strategy, asm: Assembly-CSharp}
+      data:
+        EffectedScore:
+          _serializedList:
+          - Key: 9
+            Value: 10
+    - rid: 4723801588163936259
+      type: {class: DeckEffect, ns: Strategy, asm: Assembly-CSharp}
+      data:
+        _cardToAdd: {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
+        _targetIndex: 2
+        _targetState: 1
