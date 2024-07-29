@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a0f015f93f46f40beb80e67d1d5f97, type: 3}
+  m_Name: Belajar Scrum
+  m_EditorClassIdentifier: 
+  Type: 3
+  CardName: Belajar Scrum
+  CardDescription: Konsep Scrum adalah proses berulang yang bekerja dalam siklus
+    pendek bernama "sprint." Tim menyelesaikan bagian kecil game setiap 1-4 minggu,
+    lalu mengevaluasi dan menyesuaikan sebelum memulai sprint berikutnya.
+  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  LeftEffect: {fileID: 11400000, guid: 6aee96c7dd1b27445814c82ce04f551a, type: 2}
+  RightEffect: {fileID: 11400000, guid: d0c27729ad5ebc747b793133909343ab, type: 2}

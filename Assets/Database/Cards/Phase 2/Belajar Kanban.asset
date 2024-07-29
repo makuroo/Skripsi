@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a0f015f93f46f40beb80e67d1d5f97, type: 3}
+  m_Name: Belajar Kanban
+  m_EditorClassIdentifier: 
+  Type: 3
+  CardName: Belajar Kanban
+  CardDescription: Konsep Kanban adalah metode visual di mana tugas diatur di papan
+    dengan kolom seperti "to do," "in progress," dan "done." Ini memungkinkan tim
+    melihat, mengatur, dan menyesuaikan pekerjaan secara real-time untuk efisiensi
+    maksimal.
+  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  LeftEffect: {fileID: 11400000, guid: 889fa432bf376454aa1041ebbd1c9162, type: 2}
+  RightEffect: {fileID: 11400000, guid: 119cc756f1169394d97e243f06caaf53, type: 2}
