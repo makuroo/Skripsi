@@ -16,7 +16,7 @@ namespace Card
         {
             foreach (var e in _effectStrategies)
             {
-                e.Activate();
+                e?.Activate();
             }
         }
     }

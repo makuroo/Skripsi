@@ -45,18 +45,16 @@ namespace Card
             {
                 OnUsedCard?.Invoke(transform.localPosition.x >= 500);
             }
-        
+            ResetTextOptionColor(transform.localPosition.x > 0
+                ? _cardTemplate.LeftOptionText
+                : _cardTemplate.RightOptionText);
             transform.localPosition = _initialPosition;
             transform.DOLocalRotate(Vector3.zero, .2f);
-            
-            ResetTextOptionColor(_cardTemplate.LeftOptionText);
         }
 
         private void ResetTextOptionColor(TMP_Text text)
         {
-            var color = text.color;
-            DOVirtual.Color(color, new Color(0, 0, 0,0), .2f,
-                (value)=>text.color=value);
+            text.color = new Color(0, 0, 0, 0);
         }
 
         private void OptionTextFade(TMP_Text text)

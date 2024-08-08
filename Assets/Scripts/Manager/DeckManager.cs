@@ -119,7 +119,7 @@ namespace Manager
                 exceptionCards.Add(Instantiate(currDeckData.FixedCardsList[i].Card));
             }
             var availableCards = GameDatabase.Instance.CardPoolDictionary[_currentState].Except(exceptionCards).ToList();
-            CurrentDeck=availableCards.Take(currDeckData.TotalCards-currDeckData.FixedCardsCount).Distinct().ToList();
+            CurrentDeck=availableCards.Take(currDeckData.TotalCards - currDeckData.FixedCardsCount).Distinct().ToList();
             for (int i = 0; i < currDeckData.FixedCardsCount; i++)
             {
                 CurrentDeck.Insert(currDeckData.FixedCardsList[i].Index,Instantiate(currDeckData.FixedCardsList[i].Card));
@@ -129,6 +129,7 @@ namespace Manager
         }
         public void InsertCardToDeck(State targetStateDeck,int index, CardDefinition card)
         {
+            var deckData = _deckDictionary[targetStateDeck];
             if (targetStateDeck == State.None)
             {
                 currentDeck.Insert(index,card);
@@ -140,8 +141,25 @@ namespace Manager
                     Index = index,
                     Card = Instantiate(card)
                 };
-                _deckDictionary[targetStateDeck].FixedCardsList.Add(newFixedCard);
+
+                if (deckData.FixedCardsList[index].Card!=null || deckData.FixedCardsList.Count < index)
+                {
+                    deckData.FixedCardsList.Add(deckData.FixedCardsList[deckData.TotalCards-1]);
+                    deckData.TotalCards++;
+                    deckData.FixedCardsCount++;
+                    for (int i = deckData.TotalCards-2; i < index+1; i++)
+                    {
+                        deckData.FixedCardsList[i] = deckData.FixedCardsList[i-1];
+                    }
+                }
+                else
+                {
+                    deckData.FixedCardsList.Add(newFixedCard);
+                    deckData.TotalCards++;
+                    deckData.FixedCardsCount++;
+                }
             }
+       
         }
     }
 }
