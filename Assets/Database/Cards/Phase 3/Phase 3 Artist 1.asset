@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a0f015f93f46f40beb80e67d1d5f97, type: 3}
+  m_Name: Phase 3 Artist 1
+  m_EditorClassIdentifier: 
+  Type: 0
+  CardName: Phase 3 Artist 1
+  CardDescription: 'Artist merasa kurang nyaman dengan konsep karakter yang dibuat
+    oleh designer. '
+  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  LeftEffect: {fileID: 11400000, guid: 477f12c33aff9c0459cb1254ea5c2259, type: 2}
+  RightEffect: {fileID: 11400000, guid: 5febb0be8ce2a0a4aa8c659e1c9c5d31, type: 2}
