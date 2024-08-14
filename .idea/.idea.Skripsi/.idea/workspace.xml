@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9011305-dcb1-4b48-ab65-5a4e39e9bbf2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Skripsi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skripsi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Database/GameDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Database/GameDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/DeckManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/DeckManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardDefinition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardDefinition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardTemplate.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Development",
+    "git-widget-placeholder": "implement-mechanic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

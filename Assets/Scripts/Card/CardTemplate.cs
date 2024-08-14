@@ -9,7 +9,9 @@ namespace Card
         [SerializeField] private CardDefinition _cardDefinition;
         [SerializeField] private TMP_Text _leftOptionText;
         [SerializeField] private TMP_Text _rightOptionText;
-        private Image _cardImage;
+        
+        [SerializeField] private Image _cardImage;
+        [SerializeField] private Image _cardBackgroundImage;
 
         public TMP_Text LeftOptionText => _leftOptionText;
 
@@ -39,17 +41,25 @@ namespace Card
 
         public void Initialize()
         {
-            _cardImage = GetComponent<Image>();
             if (_cardDefinition.CardSprite == null)
             {
                 Debug.LogError(_cardDefinition+" "+"card sprite is null");
             }
             _cardImage.sprite = Definition.CardSprite;
+            
+            if (_cardDefinition.CardBackgroundSprite == null)
+            {
+                Debug.LogError(_cardDefinition+" "+"card background sprite is null");
+            }
+            _cardBackgroundImage.sprite = Definition.CardBackgroundSprite;
+            _cardBackgroundImage.color = Definition.CardBackgroundColor;
+            
             if (_cardDefinition.LeftEffect == null)
             {
                 Debug.LogError(_cardDefinition+" "+"left effect is null");
             }
             LeftOptionText.text = Definition.LeftEffect.EffectName;
+            
             if (_cardDefinition.CardSprite == null)
             {
                 Debug.LogError(_cardDefinition+" "+"right effect is null");

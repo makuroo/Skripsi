@@ -349,6 +349,8 @@ MonoBehaviour:
   _cardDefinition: {fileID: 0}
   _leftOptionText: {fileID: 629612287509111589}
   _rightOptionText: {fileID: 629612287457518873}
+  _cardImage: {fileID: 5418313680588765800}
+  _cardBackgroundImage: {fileID: 3892132477522299822}
 --- !u!1 &4262364880912429316
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +363,7 @@ GameObject:
   - component: {fileID: 8794961280521145979}
   - component: {fileID: 3892132477522299822}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +439,7 @@ GameObject:
   - component: {fileID: 567982575663924133}
   - component: {fileID: 5418313680588765800}
   m_Layer: 5
-  m_Name: Karakter
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

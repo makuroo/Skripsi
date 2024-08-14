@@ -20,6 +20,8 @@ namespace Card
         [TextArea]
         public string CardDescription;
         public Sprite CardSprite;
+        public Sprite CardBackgroundSprite;
+        public Color CardBackgroundColor;
         public CardEffect LeftEffect;
         public CardEffect RightEffect;
 
