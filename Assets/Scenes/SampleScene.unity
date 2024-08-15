@@ -330,6 +330,11 @@ MonoBehaviour:
           Index: 10
         - Card: {fileID: 11400000, guid: 2c1349a19c2a2704281ef9ebd284bd53, type: 2}
           Index: 11
+    - Key: 2
+      Value:
+        TotalCards: 6
+        FixedCardsCount: 0
+        FixedCardsList: []
   currentDeck: []
 --- !u!4 &112943873
 Transform:
@@ -691,6 +696,14 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 2c1349a19c2a2704281ef9ebd284bd53, type: 2}
       - {fileID: 11400000, guid: 4c0b4ad7c6278224db4de8cebde9061d, type: 2}
       - {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
+    - Key: 2
+      Value:
+      - {fileID: 11400000, guid: ca627b441dbd9c14297d91d190101c50, type: 2}
+      - {fileID: 11400000, guid: 91b03d17eaf76934797edd42e72734a9, type: 2}
+      - {fileID: 11400000, guid: fc91c23318bc3a741848ba7edb3fd229, type: 2}
+      - {fileID: 11400000, guid: 377eff149025d324f8f4a90ac70a5369, type: 2}
+      - {fileID: 11400000, guid: cf53f6e718088274c81d3aceb1f4c58b, type: 2}
+      - {fileID: 11400000, guid: 58cbe9d4e6b45d643b53e9279bac6e36, type: 2}
 --- !u!1 &1069564803
 GameObject:
   m_ObjectHideFlags: 0
