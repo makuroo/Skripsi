@@ -8,13 +8,14 @@ namespace Manager
 {
     public enum State
     {
-        MarketResearch=0,
-        Initiation=1,
-        PreProduction=2,
-        Production=3,
-        Alpha=4,
-        Beta=5,
-        Release=6,
+        Intro = 0,
+        MarketResearch=1,
+        Initiation=2,
+        PreProduction=3,
+        Production=4,
+        Alpha=5,
+        Beta=6,
+        Release=7,
         None=99
     }
 
