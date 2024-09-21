@@ -10,17 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
-  m_Name: Intro4a_Left
+  m_Name: Intro1_R
   m_EditorClassIdentifier: 
-  EffectName: Halo !
-  _effectStrategies:
-  - rid: 941843358043865089
+  EffectName: Halo, salam kenal.
+  _effectStrategies: []
   references:
     version: 2
-    RefIds:
-    - rid: 941843358043865089
-      type: {class: DeckEffect, ns: Strategy, asm: Assembly-CSharp}
-      data:
-        _cardToAdd: {fileID: 11400000, guid: 63acd1d55e743964f951e432ff8e1066, type: 2}
-        _targetIndex: 6
-        _targetState: 0
+    RefIds: []

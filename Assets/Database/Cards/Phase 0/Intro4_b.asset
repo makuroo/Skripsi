@@ -23,5 +23,5 @@ MonoBehaviour:
   CardSprite: {fileID: 21300000, guid: 769b041613cfc87439f37763a2195c57, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: d4fac6039dc7fcb4d8d54db81377e304, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-  LeftEffect: {fileID: 11400000, guid: 077ce0cd6d3f23a42972ca0eed7b5c2c, type: 2}
-  RightEffect: {fileID: 11400000, guid: 077ce0cd6d3f23a42972ca0eed7b5c2c, type: 2}
+  LeftEffect: {fileID: 11400000, guid: daee16ccd5a72f64b80a074a5d96ee44, type: 2}
+  RightEffect: {fileID: 11400000, guid: 32b3257263a24c742aa70d5334e35060, type: 2}
