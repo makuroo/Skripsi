@@ -25,16 +25,16 @@ MonoBehaviour:
       data:
         _cardToAdd: {fileID: 11400000, guid: 2711766074507574ba3c048083315d12, type: 2}
         _targetIndex: 6
-        _targetState: 1
+        _targetState: 2
     - rid: 4723801685960163331
       type: {class: DeckEffect, ns: Strategy, asm: Assembly-CSharp}
       data:
         _cardToAdd: {fileID: 11400000, guid: e744f617536195c4d8607d70f5208eb6, type: 2}
         _targetIndex: 7
-        _targetState: 1
+        _targetState: 2
     - rid: 4723801685960163332
       type: {class: DeckEffect, ns: Strategy, asm: Assembly-CSharp}
       data:
         _cardToAdd: {fileID: 11400000, guid: 3e8d2e1ee2f2c944083e182a114bf618, type: 2}
         _targetIndex: 8
-        _targetState: 1
+        _targetState: 2

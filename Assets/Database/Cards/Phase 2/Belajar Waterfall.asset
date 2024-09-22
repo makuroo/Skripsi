@@ -17,6 +17,8 @@ MonoBehaviour:
   CardDescription: Konsep Waterfall adalah proses berurutan yang dimulai dari perencanaan,
     desain, pembuatan, pengujian, hingga peluncuran, di mana setiap langkah harus
     selesai sebelum melanjutkan ke langkah berikutnya.
-  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 50d62ea99847e7d4a9a35eee0bf57b27, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: 40e3c51f6db14734191288f84ff19bb0, type: 2}
   RightEffect: {fileID: 11400000, guid: 19a1b24289aa42945ba5745bef09291b, type: 2}

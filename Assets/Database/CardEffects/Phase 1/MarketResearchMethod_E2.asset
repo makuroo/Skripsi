@@ -31,4 +31,4 @@ MonoBehaviour:
       data:
         _cardToAdd: {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
         _targetIndex: 2
-        _targetState: 1
+        _targetState: 2

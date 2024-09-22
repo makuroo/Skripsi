@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EffectName: 'Mari kita lanjut ke fase berikutnya  '
   _effectStrategies:
-  - rid: -2
+  - rid: 5595931950692433922
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 5595931950692433922
+      type: {class: ScoreEffect, ns: Strategy, asm: Assembly-CSharp}
+      data:
+        EffectedScore:
+          _serializedList: []

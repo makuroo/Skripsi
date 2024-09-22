@@ -16,6 +16,8 @@ MonoBehaviour:
   CardName: Double Porting
   CardDescription: Berkat market research sebelumnya, anda mendapatkan peluang untuk
     membuat game di lebih dari 1 platform.
-  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 50d62ea99847e7d4a9a35eee0bf57b27, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: 52e280682e43fec4e9d9b0e0341517aa, type: 2}
   RightEffect: {fileID: 11400000, guid: adc0bb21c82d49140a934b7d985d7eb9, type: 2}

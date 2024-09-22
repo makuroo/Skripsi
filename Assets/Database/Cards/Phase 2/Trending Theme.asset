@@ -16,6 +16,8 @@ MonoBehaviour:
   CardName: Trending Theme
   CardDescription: Anda mengetahui tema apa saja yang trending berkat market research
     sebelumnya, anda mendapatkan kesempatan untuk memilih tema tersebut.
-  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 50d62ea99847e7d4a9a35eee0bf57b27, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: f87613a48e0b16946bed06d3ce7cd674, type: 2}
   RightEffect: {fileID: 11400000, guid: fed49fa633455ed419eb6bcc44a9c7bc, type: 2}
