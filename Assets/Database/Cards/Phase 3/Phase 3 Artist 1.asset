@@ -16,6 +16,8 @@ MonoBehaviour:
   CardName: Phase 3 Artist 1
   CardDescription: 'Artist merasa kurang nyaman dengan konsep karakter yang dibuat
     oleh designer. '
-  CardSprite: {fileID: 21300000, guid: 900b65852be9660478d7a6dfd6c521e7, type: 3}
+  CardSprite: {fileID: 21300000, guid: 769b041613cfc87439f37763a2195c57, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: d4fac6039dc7fcb4d8d54db81377e304, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: 477f12c33aff9c0459cb1254ea5c2259, type: 2}
   RightEffect: {fileID: 11400000, guid: 5febb0be8ce2a0a4aa8c659e1c9c5d31, type: 2}
