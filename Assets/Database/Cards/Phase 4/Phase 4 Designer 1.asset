@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a0f015f93f46f40beb80e67d1d5f97, type: 3}
+  m_Name: Phase 4 Designer 1
+  m_EditorClassIdentifier: 
+  Type: 1
+  CardName: '-'
+  CardDescription: Tutorial sebaiknya diberikan penuh sebelum pemain terjun ke gameplay
+    atau diberikan secara perlahan seiring pemain bermain game ?
+  CardSprite: {fileID: 21300000, guid: 672f0231799776549bbfe85382ea3736, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 4a4e5ea6dcc3ffc4e993a682d7af02c5, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  LeftEffect: {fileID: 11400000, guid: b2f97b90a08e18244b685a16da8d24ff, type: 2}
+  RightEffect: {fileID: 11400000, guid: 01a8511028e8b14428fb235c29966b36, type: 2}
