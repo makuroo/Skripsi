@@ -328,33 +328,29 @@ MonoBehaviour:
           Index: 1
     - Key: 2
       Value:
-        TotalCards: 12
-        FixedCardsCount: 12
+        TotalCards: 11
+        FixedCardsCount: 10
         FixedCardsList:
         - Card: {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
           Index: 0
         - Card: {fileID: 11400000, guid: 1d277aa2317c6364299b477ae8b33dd5, type: 2}
           Index: 1
-        - Card: {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
-          Index: 2
-        - Card: {fileID: 11400000, guid: 1affc044f238c524b8f0102e5d92278c, type: 2}
-          Index: 3
         - Card: {fileID: 11400000, guid: 6f8a44c5ef76ee5499bbee106eb5de10, type: 2}
-          Index: 4
+          Index: 2
         - Card: {fileID: 11400000, guid: 4c0b4ad7c6278224db4de8cebde9061d, type: 2}
-          Index: 5
+          Index: 3
         - Card: {fileID: 11400000, guid: 2711766074507574ba3c048083315d12, type: 2}
-          Index: 6
+          Index: 4
         - Card: {fileID: 11400000, guid: e744f617536195c4d8607d70f5208eb6, type: 2}
-          Index: 7
+          Index: 5
         - Card: {fileID: 11400000, guid: 3e8d2e1ee2f2c944083e182a114bf618, type: 2}
-          Index: 8
+          Index: 6
         - Card: {fileID: 11400000, guid: 260c6bc98527e8744832c12ce5b94b25, type: 2}
-          Index: 9
+          Index: 7
         - Card: {fileID: 11400000, guid: 735621c4941ecac419f2df403e6ca9f7, type: 2}
-          Index: 10
+          Index: 8
         - Card: {fileID: 11400000, guid: 2c1349a19c2a2704281ef9ebd284bd53, type: 2}
-          Index: 11
+          Index: 9
     - Key: 3
       Value:
         TotalCards: 6

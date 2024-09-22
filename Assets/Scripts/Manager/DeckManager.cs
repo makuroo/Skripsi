@@ -114,13 +114,23 @@ namespace Manager
             var currDeckData = _deckDictionary[_currentState];
             
             List<CardDefinition> exceptionCards = new ();
-            for (int i = 0; i < currDeckData.FixedCardsCount; i++)
+            for (int i = 0; i < currDeckData.FixedCardsList.Count; i++)
             {
                 exceptionCards.Add(Instantiate(currDeckData.FixedCardsList[i].Card));
             }
             var availableCards = GameDatabase.Instance.CardPoolDictionary[_currentState].Except(exceptionCards).ToList();
-            CurrentDeck=availableCards.Take(currDeckData.TotalCards - currDeckData.FixedCardsCount).Distinct().ToList();
-            for (int i = 0; i < currDeckData.FixedCardsCount; i++)
+            if (currDeckData.TotalCards - currDeckData.FixedCardsList.Count > 0)
+            {
+                var random = new System.Random();
+                var randomizedCards = availableCards
+                    .OrderBy(card => random.Next()) // Shuffling the available cards randomly
+                    .Take(currDeckData.TotalCards - currDeckData.FixedCardsList.Count)
+                    .Distinct() // Ensure distinct cards if needed
+                    .ToList();
+                CurrentDeck = randomizedCards;
+            }
+            
+            for (int i = 0; i < currDeckData.FixedCardsList.Count; i++)
             {
                 CurrentDeck.Insert(currDeckData.FixedCardsList[i].Index,Instantiate(currDeckData.FixedCardsList[i].Card));
             }
@@ -129,6 +139,7 @@ namespace Manager
         }
         public void InsertCardToDeck(State targetStateDeck,int index, CardDefinition card)
         {
+            Debug.Log(targetStateDeck.ToString());
             var deckData = _deckDictionary[targetStateDeck];
             if (targetStateDeck == State.None)
             {
@@ -141,23 +152,27 @@ namespace Manager
                     Index = index,
                     Card = Instantiate(card)
                 };
+                
+                deckData.FixedCardsList.Add(newFixedCard);
+                deckData.TotalCards++;
+                deckData.FixedCardsCount++;
 
-                if (deckData.FixedCardsList[index].Card!=null || deckData.FixedCardsList.Count < index)
-                {
-                    deckData.FixedCardsList.Add(deckData.FixedCardsList[deckData.TotalCards-1]);
-                    deckData.TotalCards++;
-                    deckData.FixedCardsCount++;
-                    for (int i = deckData.TotalCards-2; i < index+1; i++)
-                    {
-                        deckData.FixedCardsList[i] = deckData.FixedCardsList[i-1];
-                    }
-                }
-                else
-                {
-                    deckData.FixedCardsList.Add(newFixedCard);
-                    deckData.TotalCards++;
-                    deckData.FixedCardsCount++;
-                }
+                // if (deckData.FixedCardsList[index].Card!=null || deckData.FixedCardsList.Count < index)
+                // {
+                //     deckData.FixedCardsList.Add(deckData.FixedCardsList[^1]);
+                //     deckData.TotalCards++;
+                //     deckData.FixedCardsCount++;
+                //     for (int i = deckData.TotalCards-2; i < index+1; i++)
+                //     {
+                //         deckData.FixedCardsList[i] = deckData.FixedCardsList[i-1];
+                //     }
+                // }
+                // else
+                // {
+                //     deckData.FixedCardsList.Add(newFixedCard);
+                //     deckData.TotalCards++;
+                //     deckData.FixedCardsCount++;
+                // }
             }
        
         }

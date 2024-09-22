@@ -43,7 +43,7 @@ namespace Card
         {
             if (transform.localPosition.x is >= 500 or <= -500)
             {
-                OnUsedCard?.Invoke(transform.localPosition.x >= 500);
+                OnUsedCard?.Invoke(transform.localPosition.x < 500);
             }
             ResetTextOptionColor(transform.localPosition.x > 0
                 ? _cardTemplate.LeftOptionText
