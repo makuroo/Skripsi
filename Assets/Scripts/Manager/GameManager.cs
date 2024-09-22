@@ -38,6 +38,7 @@ namespace Manager
     
     public class GameManager : MonoBehaviour
     {
+        [SerializeField]
         private State _currentState;
         [SerializeField] 
         private SerializedDictionary<ScoresEnum, int> _scoreDictionary = new();

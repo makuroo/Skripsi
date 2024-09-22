@@ -23,7 +23,6 @@ namespace Manager
     struct DeckData
     {
         public int TotalCards;
-        public int FixedCardsCount;
         public List<FixedCards> FixedCardsList;
     }
     
@@ -139,14 +138,13 @@ namespace Manager
         }
         public void InsertCardToDeck(State targetStateDeck,int index, CardDefinition card)
         {
-            Debug.Log(targetStateDeck.ToString());
-            var deckData = _deckDictionary[targetStateDeck];
             if (targetStateDeck == State.None)
             {
                 currentDeck.Insert(index,card);
             }
             else
             {
+                var deckData = _deckDictionary[targetStateDeck];
                 var newFixedCard = new FixedCards
                 {
                     Index = index,
@@ -155,24 +153,6 @@ namespace Manager
                 
                 deckData.FixedCardsList.Add(newFixedCard);
                 deckData.TotalCards++;
-                deckData.FixedCardsCount++;
-
-                // if (deckData.FixedCardsList[index].Card!=null || deckData.FixedCardsList.Count < index)
-                // {
-                //     deckData.FixedCardsList.Add(deckData.FixedCardsList[^1]);
-                //     deckData.TotalCards++;
-                //     deckData.FixedCardsCount++;
-                //     for (int i = deckData.TotalCards-2; i < index+1; i++)
-                //     {
-                //         deckData.FixedCardsList[i] = deckData.FixedCardsList[i-1];
-                //     }
-                // }
-                // else
-                // {
-                //     deckData.FixedCardsList.Add(newFixedCard);
-                //     deckData.TotalCards++;
-                //     deckData.FixedCardsCount++;
-                // }
             }
        
         }

@@ -295,7 +295,6 @@ MonoBehaviour:
     - Key: 0
       Value:
         TotalCards: 10
-        FixedCardsCount: 10
         FixedCardsList:
         - Card: {fileID: 11400000, guid: 3345be01f1dbfc142b2c33c53e565a3e, type: 2}
           Index: 0
@@ -320,7 +319,6 @@ MonoBehaviour:
     - Key: 1
       Value:
         TotalCards: 2
-        FixedCardsCount: 2
         FixedCardsList:
         - Card: {fileID: 11400000, guid: 881f2f3fbbbf15a458cef3ef22a71303, type: 2}
           Index: 0
@@ -328,8 +326,7 @@ MonoBehaviour:
           Index: 1
     - Key: 2
       Value:
-        TotalCards: 11
-        FixedCardsCount: 7
+        TotalCards: 8
         FixedCardsList:
         - Card: {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
           Index: 0
@@ -348,7 +345,6 @@ MonoBehaviour:
     - Key: 3
       Value:
         TotalCards: 6
-        FixedCardsCount: 0
         FixedCardsList: []
   currentDeck: []
 --- !u!4 &112943873
@@ -828,6 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618bcc2c73ef8ae43965bf804d636c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentState: 0
   _scoreDictionary:
     _serializedList:
     - Key: 0
