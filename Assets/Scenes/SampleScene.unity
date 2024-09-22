@@ -329,7 +329,7 @@ MonoBehaviour:
     - Key: 2
       Value:
         TotalCards: 11
-        FixedCardsCount: 10
+        FixedCardsCount: 7
         FixedCardsList:
         - Card: {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
           Index: 0
@@ -339,18 +339,12 @@ MonoBehaviour:
           Index: 2
         - Card: {fileID: 11400000, guid: 4c0b4ad7c6278224db4de8cebde9061d, type: 2}
           Index: 3
-        - Card: {fileID: 11400000, guid: 2711766074507574ba3c048083315d12, type: 2}
-          Index: 4
-        - Card: {fileID: 11400000, guid: e744f617536195c4d8607d70f5208eb6, type: 2}
-          Index: 5
-        - Card: {fileID: 11400000, guid: 3e8d2e1ee2f2c944083e182a114bf618, type: 2}
-          Index: 6
         - Card: {fileID: 11400000, guid: 260c6bc98527e8744832c12ce5b94b25, type: 2}
-          Index: 7
+          Index: 4
         - Card: {fileID: 11400000, guid: 735621c4941ecac419f2df403e6ca9f7, type: 2}
-          Index: 8
+          Index: 5
         - Card: {fileID: 11400000, guid: 2c1349a19c2a2704281ef9ebd284bd53, type: 2}
-          Index: 9
+          Index: 6
     - Key: 3
       Value:
         TotalCards: 6
