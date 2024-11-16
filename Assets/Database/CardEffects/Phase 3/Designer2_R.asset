@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
-  m_Name: Phase 3 Artist 1 Right
+  m_Name: Designer2_R
   m_EditorClassIdentifier: 
-  EffectName: 'Sebaiknya designer mengganti konsep. '
+  EffectName: 'Mengikuti konsep yang sudah ditentukan '
   _effectStrategies:
-  - rid: 941843089979342849
+  - rid: 941843089979342850
   references:
     version: 2
     RefIds:
-    - rid: 941843089979342849
+    - rid: 941843089979342850
       type: {class: ScoreEffect, ns: Strategy, asm: Assembly-CSharp}
       data:
         EffectedScore:
           _serializedList:
-          - Key: 4
-            Value: 10
           - Key: 5
             Value: 5

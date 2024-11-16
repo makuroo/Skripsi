@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
-  m_Name: Phase 3 Programmer 1 Left
+  m_Name: Programmer1_R
   m_EditorClassIdentifier: 
-  EffectName: 'Wajib dibuat walaupun kompleks !! '
+  EffectName: 'Pilih yang simpel saja untuk prototype ! '
   _effectStrategies:
   - rid: 941843089979342851
   references:
@@ -23,7 +23,5 @@ MonoBehaviour:
       data:
         EffectedScore:
           _serializedList:
-          - Key: 5
-            Value: 10
           - Key: 6
-            Value: 5
+            Value: 15

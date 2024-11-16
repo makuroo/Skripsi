@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
-  m_Name: Phase 3 Programmer 2 Left
+  m_Name: Programmer2_R
   m_EditorClassIdentifier: 
-  EffectName: 'Keduanya harus berdiskusi lagi '
+  EffectName: 'Kerjain sesuai asumsi agar hemat waktu '
   _effectStrategies:
   - rid: 941843089979342851
   references:
@@ -23,7 +23,5 @@ MonoBehaviour:
       data:
         EffectedScore:
           _serializedList:
-          - Key: 5
-            Value: 10
           - Key: 6
-            Value: 10
+            Value: 15
