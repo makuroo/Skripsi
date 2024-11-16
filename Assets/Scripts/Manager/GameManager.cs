@@ -69,6 +69,10 @@ namespace Manager
         private void Start()
         {
             Time.timeScale = 1;
+            foreach (var key in _scoreDictionary.Keys)
+            {
+                UIManager.UpdateScoreUI?.Invoke(key, _scoreDictionary[key]);
+            }
         }
 
         public void UpdateScoreDictionary(SerializedDictionary<ScoresEnum, int> changes)
