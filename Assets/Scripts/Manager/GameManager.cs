@@ -33,7 +33,7 @@ namespace Manager
         MarketingScore,
         RatingScore,
         IncomeScore,
-        Fund
+        FundScore
     }
     
     public class GameManager : MonoBehaviour
@@ -65,6 +65,7 @@ namespace Manager
             foreach (var key in changes.Keys.ToList())
             {
                 _scoreDictionary[key] += changes[key];
+                UIManager.UpdateScoreUI?.Invoke(key,_scoreDictionary[key]);
             }
         }
 
