@@ -351,7 +351,11 @@ MonoBehaviour:
           Index: 6
     - Key: 3
       Value:
-        TotalCards: 6
+        TotalCards: 8
+        FixedCardsList: []
+    - Key: 4
+      Value:
+        TotalCards: 5
         FixedCardsList: []
   currentDeck: []
 --- !u!4 &112943873
@@ -531,7 +535,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.5076713, g: 0.8301887, b: 0.3947312, a: 0}
+  m_BackGroundColor: {r: 0.32915565, g: 0.3584906, b: 0.31925955, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -765,6 +769,15 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 377eff149025d324f8f4a90ac70a5369, type: 2}
       - {fileID: 11400000, guid: cf53f6e718088274c81d3aceb1f4c58b, type: 2}
       - {fileID: 11400000, guid: 58cbe9d4e6b45d643b53e9279bac6e36, type: 2}
+      - {fileID: 11400000, guid: c07a1a40ff1c16042b7d857c82c1b959, type: 2}
+      - {fileID: 11400000, guid: 09384fec5060eff479c4e6d63d481e6b, type: 2}
+    - Key: 4
+      Value:
+      - {fileID: 11400000, guid: a4523298cd2ed174f9bebd80e75713fd, type: 2}
+      - {fileID: 11400000, guid: a0ddab6853014024daa35d6a6bd00866, type: 2}
+      - {fileID: 11400000, guid: a7c6576de3d0e5f478865d094b52b9f9, type: 2}
+      - {fileID: 11400000, guid: 84ca78558d1a91f4887b93415c3af826, type: 2}
+      - {fileID: 11400000, guid: 70363eb7dce38e6409b171bac0622f23, type: 2}
 --- !u!1 &1069564803
 GameObject:
   m_ObjectHideFlags: 0

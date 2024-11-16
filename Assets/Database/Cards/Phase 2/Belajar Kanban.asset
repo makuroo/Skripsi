@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   CardName: Belajar Kanban
-  CardDescription: Konsep Kanban adalah metode visual di mana tugas diatur di papan
-    dengan kolom seperti "to do," "in progress," dan "done."
-  CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
+  CardDescription: Kanban adalah metode visual di mana tugas dibagi dalam beberapa
+    kolom berdasarkan status tugasnya.
+  CardSprite: {fileID: 0}
   CardBackgroundSprite: {fileID: 21300000, guid: 50d62ea99847e7d4a9a35eee0bf57b27, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: 889fa432bf376454aa1041ebbd1c9162, type: 2}
