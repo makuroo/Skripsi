@@ -44,11 +44,17 @@ namespace Manager
         private SerializedDictionary<ScoresEnum, int> _scoreDictionary = new();
         public static GameManager Instance { get; private set; }
 
+        [SerializeField] private int _ratingScore;
+        [SerializeField] private int _incomeScore; 
+
         public State CurrentState
         {
             get => _currentState;
             set => _currentState = value;
         }
+
+        public int RatingScore => _ratingScore;
+        public int IncomeScore => _incomeScore;
 
         public static Action<State> OnStageChange;
 
@@ -60,6 +66,11 @@ namespace Manager
                 Destroy(gameObject);
         }
 
+        private void Start()
+        {
+            Time.timeScale = 1;
+        }
+
         public void UpdateScoreDictionary(SerializedDictionary<ScoresEnum, int> changes)
         {
             foreach (var key in changes.Keys.ToList())
@@ -67,14 +78,36 @@ namespace Manager
                 _scoreDictionary[key] += changes[key];
                 UIManager.UpdateScoreUI?.Invoke(key,_scoreDictionary[key]);
             }
+
+            _ratingScore = CalculateRatingScore();
+            _incomeScore = CalculateIncomeScore();
+
+            if (_scoreDictionary[ScoresEnum.FundScore] <= 0)
+            {
+                UIManager.PlayerLose?.Invoke();
+            }
         }
 
         public void NextStage()
         {
-            if (CurrentState == State.Release) return;
+            if (CurrentState == State.Release)
+            {
+                UIManager.PlayerWin?.Invoke();
+                return;
+            }
 
             CurrentState++;
             OnStageChange?.Invoke(CurrentState);
         }
+
+        private int CalculateRatingScore() =>
+            (_scoreDictionary[ScoresEnum.VisualScore] +
+             _scoreDictionary[ScoresEnum.GameplayScore] +
+             _scoreDictionary[ScoresEnum.TechnicalScore] +
+             _scoreDictionary[ScoresEnum.AudioScore]) / 4;
+
+        private int CalculateIncomeScore() =>
+            (int) (.4f * _scoreDictionary[ScoresEnum.MonetizationScore]) +
+            (int)(.4f* _scoreDictionary[ScoresEnum.MarketingScore]) + (int)(.2f * RatingScore);
     }
 }

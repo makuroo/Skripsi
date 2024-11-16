@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a9011305-dcb1-4b48-ab65-5a4e39e9bbf2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Skripsi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skripsi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Database/Cards/Phase 1/End Market Research.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Database/Cards/Phase 1/End Market Research.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/DeckManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/DeckManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +23,18 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2iGpZhslQfNy7kecqJmLO7vjcuV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Development",
+    "git-widget-placeholder": "implement-mechanic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,6 +123,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

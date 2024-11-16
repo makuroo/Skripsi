@@ -5,6 +5,7 @@ using Card;
 using Database;
 using TMPro;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Manager
 {
@@ -31,11 +32,16 @@ namespace Manager
         [SerializeField] private CardTemplate _cardPrefab;
         [SerializeField] private Transform _templateParent;
         [SerializeField] private TMP_Text _cardDescriptionText;
+
+        [Header("Next Card")] 
+        [SerializeField] private Image _backgroundSprite;
+        [SerializeField] private Image _imageSprite;
+        
         [Space(5)]
         [SerializeField] private SerializedDictionary<State, DeckData> _deckDictionary;
         [Space(5)]
         [SerializeField] private List<CardDefinition> currentDeck = new();
-
+        
         private CardTemplate _currentHand;
         
         public List<CardDefinition> CurrentDeck
@@ -77,7 +83,8 @@ namespace Manager
                 if(_currentHand.Definition.LeftEffect)
                     _currentHand.ActivateLeftStrategy();
             }
-            Destroy(_currentHand);
+            Destroy(_currentHand.gameObject);
+            _currentHand = null;
             
             CurrentDeck.RemoveAt(0);
             if (CurrentDeck.Count == 0)
@@ -91,6 +98,7 @@ namespace Manager
 
         private void InitializeCurrentCard()
         {
+            Debug.Log(_currentHand);
             if (_currentHand == null)
             {
                 CardTemplate template = Instantiate(_cardPrefab, Vector3.zero, Quaternion.identity, _templateParent);
@@ -105,6 +113,17 @@ namespace Manager
                 _currentHand.Definition = CurrentDeck[0];
                 _cardDescriptionText.text = _currentHand.Definition.CardDescription;
                 _currentHand.Initialize();
+            }
+
+            if (CurrentDeck.Count >= 2)
+            {
+                _backgroundSprite.transform.parent.gameObject.SetActive(true);
+                _imageSprite.sprite = CurrentDeck[1].CardSprite;
+                _backgroundSprite.sprite = CurrentDeck[1].CardBackgroundSprite;
+            }
+            else
+            {
+                _backgroundSprite.transform.parent.gameObject.SetActive(false);
             }
         }
 

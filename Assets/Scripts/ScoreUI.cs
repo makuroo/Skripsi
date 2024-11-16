@@ -12,10 +12,12 @@ public class ScoreUI : MonoBehaviour
 
     [SerializeField] private TMP_Text _textUI;
 
+    [SerializeField] private int _initialValue;
+
     private void Start()
     {
-        _uiFillImage.fillAmount = 0;
-        _textUI.text = 0.ToString();
+        _uiFillImage.fillAmount = _initialValue/100f;
+        _textUI.text = _initialValue.ToString();
     }
 
     public void UpdateUI(int value)
