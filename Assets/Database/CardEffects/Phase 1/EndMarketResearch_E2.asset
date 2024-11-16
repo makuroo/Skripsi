@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EffectName: 'Tidak sabar untuk fase selanjutnya  '
   _effectStrategies:
-  - rid: 5595931950692433921
+  - rid: -2
   references:
     version: 2
     RefIds:
-    - rid: 5595931950692433921
-      type: {class: ScoreEffect, ns: Strategy, asm: Assembly-CSharp}
-      data:
-        EffectedScore:
-          _serializedList: []
+    - rid: -2
+      type: {class: , ns: , asm: }

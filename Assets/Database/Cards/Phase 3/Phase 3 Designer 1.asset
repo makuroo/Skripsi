@@ -17,7 +17,7 @@ MonoBehaviour:
   CardDescription: Game Design Document yang sudah dibuat terlihat berantakan dan
     tidak konsisten
   CardSprite: {fileID: 21300000, guid: 672f0231799776549bbfe85382ea3736, type: 3}
-  CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 521fce794dd6e3a49ba88bc385f8038c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: e453afce74c8b8b45ad95edd3d4b9d7a, type: 2}
   RightEffect: {fileID: 11400000, guid: d581e9abf795ced41ba22427d5adf424, type: 2}

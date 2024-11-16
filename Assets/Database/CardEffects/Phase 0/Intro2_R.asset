@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Intro2_R
   m_EditorClassIdentifier: 
   EffectName: Iya, namun hanya sebentar.
-  _effectStrategies: []
+  _effectStrategies:
+  - rid: -2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

@@ -17,7 +17,7 @@ MonoBehaviour:
   CardDescription: Game design yang dibuat oleh game designer memiliki visi yang
     berbeda dengan konsep yang sudah dibahas oleh tim di diskusi sebelumnya.
   CardSprite: {fileID: 21300000, guid: 672f0231799776549bbfe85382ea3736, type: 3}
-  CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 521fce794dd6e3a49ba88bc385f8038c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: 5aef1a57804ad0f41a105902748e6ebf, type: 2}
   RightEffect: {fileID: 11400000, guid: 8c6155c97484eca48b55838da56a3ce0, type: 2}

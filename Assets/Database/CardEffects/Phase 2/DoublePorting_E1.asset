@@ -23,9 +23,9 @@ MonoBehaviour:
       data:
         EffectedScore:
           _serializedList:
+          - Key: 12
+            Value: -10
           - Key: 9
             Value: 10
           - Key: 8
             Value: 10
-          - Key: 2
-            Value: 5

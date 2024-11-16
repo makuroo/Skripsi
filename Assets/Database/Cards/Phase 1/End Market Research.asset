@@ -18,7 +18,7 @@ MonoBehaviour:
     mendalam dan detail, hingga akhirnya mendapatkan data yang bisa dimanfaatkan
     untuk planning game.
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
-  CardBackgroundSprite: {fileID: 21300000, guid: d4fac6039dc7fcb4d8d54db81377e304, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 50d62ea99847e7d4a9a35eee0bf57b27, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   LeftEffect: {fileID: 11400000, guid: cd934695e749e3e469cf171629b611a7, type: 2}
   RightEffect: {fileID: 11400000, guid: 996f5699a3745bb4596a9d194855fe01, type: 2}

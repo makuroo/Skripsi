@@ -430,7 +430,11 @@ MonoBehaviour:
     - Key: 12
       Value: {fileID: 1096280622}
   _gameOverPanel: {fileID: 0}
+  _ratingScoreLose: {fileID: 0}
+  _incomeScoreLose: {fileID: 0}
   _playerWinPanel: {fileID: 0}
+  _ratingScoreWin: {fileID: 0}
+  _incomeScoreWin: {fileID: 0}
 --- !u!4 &389189906
 Transform:
   m_ObjectHideFlags: 0
@@ -893,7 +897,7 @@ MonoBehaviour:
     - Key: 11
       Value: 0
     - Key: 12
-      Value: 0
+      Value: 100
   _ratingScore: 0
   _incomeScore: 0
 --- !u!4 &1123682846
