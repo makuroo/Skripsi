@@ -45,6 +45,7 @@ namespace Card
             {
                 OnUsedCard?.Invoke(transform.localPosition.x < 500);
             }
+            
             ResetTextOptionColor(transform.localPosition.x > 0
                 ? _cardTemplate.LeftOptionText
                 : _cardTemplate.RightOptionText);
@@ -62,6 +63,11 @@ namespace Card
             var color = text.color;
             color.a = Mathf.Abs(transform.localPosition.x) / 255;
             text.color = color;
+        }
+
+        private void OnDestroy()
+        {
+            DOTween.KillAll(transform);
         }
     }
 }
