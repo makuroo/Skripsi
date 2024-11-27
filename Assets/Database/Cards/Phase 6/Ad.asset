@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a0f015f93f46f40beb80e67d1d5f97, type: 3}
+  m_Name: Ad
+  m_EditorClassIdentifier: 
+  Type: 0
+  CardName: '-'
+  CardDescription: Next is ads. There are many types of ads, such as static banner
+    ads, interstitial ads that appear between levels or at certain times, and reward
+    ads where players can earn an item by watching an ad.
+  CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  LeftEffect: {fileID: 11400000, guid: a2316d24eae5e3d4fabf2c906345b4c6, type: 2}
+  RightEffect: {fileID: 11400000, guid: 2340fff9d861082499b636f3e057f62d, type: 2}

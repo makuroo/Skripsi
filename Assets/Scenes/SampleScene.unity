@@ -340,7 +340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Which one do you think is better
+  m_text: Yo whats up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c81a6fc1b9f4d429334cfedf6fcd97, type: 2}
   m_sharedMaterial: {fileID: -7687454828275401424, guid: 90c81a6fc1b9f4d429334cfedf6fcd97, type: 2}
@@ -716,6 +716,38 @@ MonoBehaviour:
         FixedCardsList:
         - Card: {fileID: 11400000, guid: 123a70f985aa74e48a1552bc51559637, type: 2}
           Index: 0
+    - Key: 6
+      Value:
+        TotalCards: 7
+        FixedCardsList:
+        - Card: {fileID: 11400000, guid: eb3ea648d37f7884a8a73e16a17fc96a, type: 2}
+          Index: 0
+        - Card: {fileID: 11400000, guid: 5ec334d11bb91a644bd1f5e848f9c0dc, type: 2}
+          Index: 1
+        - Card: {fileID: 11400000, guid: 5dafbfc094b264d47bd564521c4fcb0b, type: 2}
+          Index: 2
+        - Card: {fileID: 11400000, guid: 57b37fa9c2b5f5b42b0adc0ca37b5831, type: 2}
+          Index: 3
+        - Card: {fileID: 11400000, guid: 83debe9b1594ef948ae0497e2e796a5e, type: 2}
+          Index: 4
+        - Card: {fileID: 11400000, guid: 4d5ace2352287f3418a3ff89ca0b5c88, type: 2}
+          Index: 5
+        - Card: {fileID: 11400000, guid: 2da1651176d6b1b49aa073f51da42e8e, type: 2}
+          Index: 6
+    - Key: 7
+      Value:
+        TotalCards: 5
+        FixedCardsList:
+        - Card: {fileID: 11400000, guid: 537bba09af49713478863ff90b833aa9, type: 2}
+          Index: 0
+        - Card: {fileID: 11400000, guid: 8e0eec1ce714227499f4ef3fea8a12bd, type: 2}
+          Index: 1
+        - Card: {fileID: 11400000, guid: 7b6aba55311b32844ae555758be23491, type: 2}
+          Index: 2
+        - Card: {fileID: 11400000, guid: e9d60a98a19907b4c99b6291e82b9828, type: 2}
+          Index: 3
+        - Card: {fileID: 11400000, guid: b7a6e6aea2aefe749a5627d59f9c990f, type: 2}
+          Index: 4
   currentDeck: []
 --- !u!4 &112943873
 Transform:
@@ -3212,7 +3244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Win
+  m_text: Evaluation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c81a6fc1b9f4d429334cfedf6fcd97, type: 2}
   m_sharedMaterial: {fileID: -7687454828275401424, guid: 90c81a6fc1b9f4d429334cfedf6fcd97, type: 2}
@@ -3239,8 +3271,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4084,6 +4116,22 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 64b8fe0790c134e49a872783cde0358f, type: 2}
       - {fileID: 11400000, guid: acd0b7585e6b64e4cb6ac868b4c42ce2, type: 2}
       - {fileID: 11400000, guid: d9fad477e38a82d459e8ce67714e5647, type: 2}
+    - Key: 6
+      Value:
+      - {fileID: 11400000, guid: eb3ea648d37f7884a8a73e16a17fc96a, type: 2}
+      - {fileID: 11400000, guid: 5ec334d11bb91a644bd1f5e848f9c0dc, type: 2}
+      - {fileID: 11400000, guid: 57b37fa9c2b5f5b42b0adc0ca37b5831, type: 2}
+      - {fileID: 11400000, guid: 83debe9b1594ef948ae0497e2e796a5e, type: 2}
+      - {fileID: 11400000, guid: 5dafbfc094b264d47bd564521c4fcb0b, type: 2}
+      - {fileID: 11400000, guid: 4d5ace2352287f3418a3ff89ca0b5c88, type: 2}
+      - {fileID: 11400000, guid: 2da1651176d6b1b49aa073f51da42e8e, type: 2}
+    - Key: 7
+      Value:
+      - {fileID: 11400000, guid: 537bba09af49713478863ff90b833aa9, type: 2}
+      - {fileID: 11400000, guid: 8e0eec1ce714227499f4ef3fea8a12bd, type: 2}
+      - {fileID: 11400000, guid: 7b6aba55311b32844ae555758be23491, type: 2}
+      - {fileID: 11400000, guid: e9d60a98a19907b4c99b6291e82b9828, type: 2}
+      - {fileID: 11400000, guid: b7a6e6aea2aefe749a5627d59f9c990f, type: 2}
 --- !u!1 &1064836817
 GameObject:
   m_ObjectHideFlags: 0
