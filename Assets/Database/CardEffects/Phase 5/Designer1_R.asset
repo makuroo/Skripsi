@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
-  m_Name: ChooseProjectMethodology_E2
+  m_Name: Designer1_R
   m_EditorClassIdentifier: 
-  EffectName: Explore the frameworks of the Agile method.
+  EffectName: Leave it as is since the game is only made for our target market.
   _effectStrategies:
-  - rid: 4723801685960163334
+  - rid: 134022297412435976
   references:
     version: 2
     RefIds:
-    - rid: 4723801685960163334
-      type: {class: DeckEffect, ns: Strategy, asm: Assembly-CSharp}
+    - rid: 134022297412435976
+      type: {class: ScoreEffect, ns: Strategy, asm: Assembly-CSharp}
       data:
-        _cardToAdd: {fileID: 11400000, guid: 735621c4941ecac419f2df403e6ca9f7, type: 2}
-        _targetIndex: 11
-        _targetState: 2
+        EffectedScore:
+          _serializedList:
+          - Key: 5
+            Value: 10

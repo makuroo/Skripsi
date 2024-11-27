@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a0f015f93f46f40beb80e67d1d5f97, type: 3}
+  m_Name: Audio 2
+  m_EditorClassIdentifier: 
+  Type: 1
+  CardName: '-'
+  CardDescription: Some sounds have different styles and qualities.
+  CardSprite: {fileID: 21300000, guid: a074dedab6d844243b3e9bedb51dfe45, type: 3}
+  CardBackgroundSprite: {fileID: 21300000, guid: 4af3f285ebed6894cbea1dd967201ba8, type: 3}
+  CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  LeftEffect: {fileID: 0}
+  RightEffect: {fileID: 0}
