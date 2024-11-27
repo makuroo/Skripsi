@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   CardName: Phase 3 Programmer 1
-  CardDescription: Programmer merasa mekaniknya terlalu kompleks untuk sebuah prototype.
+  CardDescription: The programmer feels that the mechanics are too complex for a
+    prototype.
   CardSprite: {fileID: 21300000, guid: a0c8ad7a15bb17a4cb7603fdb7b32f79, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 4a4e5ea6dcc3ffc4e993a682d7af02c5, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   CardName: '-'
-  CardDescription: Gambar yang sudah dibuat masih kurang bagus namun bisa ditutupi
-    dengan shader dan visual effect.
+  CardDescription: The image that has been made is still not great, but it can be
+    covered up with shaders and visual effects.
   CardSprite: {fileID: 21300000, guid: 769b041613cfc87439f37763a2195c57, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: d4fac6039dc7fcb4d8d54db81377e304, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

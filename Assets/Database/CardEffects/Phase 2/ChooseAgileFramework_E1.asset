@@ -24,10 +24,10 @@ MonoBehaviour:
         EffectedScore:
           _serializedList:
           - Key: 5
-            Value: 10
+            Value: 5
           - Key: 6
-            Value: 10
+            Value: 5
           - Key: 7
-            Value: 10
+            Value: 5
           - Key: 4
-            Value: 10
+            Value: 5

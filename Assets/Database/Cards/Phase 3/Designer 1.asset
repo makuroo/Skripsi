@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   CardName: Phase 3 Designer 1
-  CardDescription: Game Design Document yang sudah dibuat terlihat berantakan dan
-    tidak konsisten
+  CardDescription: The Game Design Document that has been created looks messy and
+    inconsistent.
   CardSprite: {fileID: 21300000, guid: 672f0231799776549bbfe85382ea3736, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 521fce794dd6e3a49ba88bc385f8038c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

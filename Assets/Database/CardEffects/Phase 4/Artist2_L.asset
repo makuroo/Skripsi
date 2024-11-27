@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: Artist2_L
   m_EditorClassIdentifier: 
-  EffectName: Lembur dan buat semuanya segera.
+  EffectName: Work overtime and get everything done quickly.
   _effectStrategies:
   - rid: 5595931950692433925
   references:
@@ -25,3 +25,5 @@ MonoBehaviour:
           _serializedList:
           - Key: 4
             Value: 10
+          - Key: 0
+            Value: 25

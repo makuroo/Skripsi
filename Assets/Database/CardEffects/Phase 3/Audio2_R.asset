@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: Audio2_R
   m_EditorClassIdentifier: 
-  EffectName: Tidak. Anggaran kita sangat terbatas
+  EffectName: No. Our budget is very limited.
   _effectStrategies:
   - rid: 941843089979342851
   references:
@@ -24,4 +24,6 @@ MonoBehaviour:
         EffectedScore:
           _serializedList:
           - Key: 7
-            Value: 20
+            Value: 10
+          - Key: 3
+            Value: 10

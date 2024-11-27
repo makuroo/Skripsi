@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   CardName: Intro4_d
-  CardDescription: '~ Audio Engineer ~
-
-
-    Hey saya Vioni, pekerjaan saya adalah
-    membuat efek suara dan musik, serta memastikan audio dari game mendukung imersi
-    pemain. '
+  CardDescription: "~ Audio Engineer ~\r\n\r\nHey, I\u2019m Vioni. My job is to create
+    sound effects and music, ensuring the game\u2019s audio enhances player immersion."
   CardSprite: {fileID: 21300000, guid: a074dedab6d844243b3e9bedb51dfe45, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 4af3f285ebed6894cbea1dd967201ba8, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: Designer2_R
   m_EditorClassIdentifier: 
-  EffectName: 'Mengikuti konsep yang sudah ditentukan '
+  EffectName: Follow the discussed concept.
   _effectStrategies:
   - rid: 941843089979342850
   references:
@@ -23,5 +23,5 @@ MonoBehaviour:
       data:
         EffectedScore:
           _serializedList:
-          - Key: 5
-            Value: 5
+          - Key: 1
+            Value: 10

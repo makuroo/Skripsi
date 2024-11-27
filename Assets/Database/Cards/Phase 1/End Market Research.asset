@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   CardName: End Market Research
-  CardDescription: Tim anda menghabiskan berhari-hari untuk melakukan research yang
-    mendalam dan detail, hingga akhirnya mendapatkan data yang bisa dimanfaatkan
-    untuk planning game.
+  CardDescription: Your team spent days conducting in-depth and detailed research,
+    and finally gathered data that can be used for game planning.
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 50d62ea99847e7d4a9a35eee0bf57b27, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

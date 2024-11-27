@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: ChooseGenre_E2
   m_EditorClassIdentifier: 
-  EffectName: Genre yang sedang populer
+  EffectName: The genre that is currently popular.
   _effectStrategies:
   - rid: 4723801588163936264
   references:
@@ -23,5 +23,9 @@ MonoBehaviour:
       data:
         EffectedScore:
           _serializedList:
+          - Key: 1
+            Value: 5
+          - Key: 5
+            Value: 5
           - Key: 9
             Value: 10

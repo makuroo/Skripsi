@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: Mix1_R
   m_EditorClassIdentifier: 
-  EffectName: 'Menolak perubahan dari designer '
+  EffectName: Reject the changes from the designer.
   _effectStrategies:
   - rid: 5595931950692433926
   references:
@@ -23,7 +23,9 @@ MonoBehaviour:
       data:
         EffectedScore:
           _serializedList:
-          - Key: 6
+          - Key: 1
             Value: 10
+          - Key: 6
+            Value: 5
           - Key: 5
-            Value: -10
+            Value: 5

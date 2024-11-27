@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   CardName: Intro4_c
-  CardDescription: '~ Designer ~
-
-
-    Hai, nama saya Sasha. Saya adalah designer
-    game yang merancang desain game, termasuk level, mekanik, dan alur cerita untuk
-    membuat gameplay yang menyenangkan."'
+  CardDescription: "~ Designer ~\n\nHi, I\u2019m Sasha, the game designer. I design
+    the game\u2019s levels, mechanics, and story to create enjoyable gameplay."
   CardSprite: {fileID: 21300000, guid: 672f0231799776549bbfe85382ea3736, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 521fce794dd6e3a49ba88bc385f8038c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

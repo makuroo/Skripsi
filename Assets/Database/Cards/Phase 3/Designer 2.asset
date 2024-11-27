@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   CardName: Phase 3 Designer 2
-  CardDescription: Game design yang dibuat oleh game designer memiliki visi yang
-    berbeda dengan konsep yang sudah dibahas oleh tim di diskusi sebelumnya.
+  CardDescription: The game design created by the game designer has a different vision
+    from the concept that was discussed by the team in the previous meeting.
   CardSprite: {fileID: 21300000, guid: 672f0231799776549bbfe85382ea3736, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 521fce794dd6e3a49ba88bc385f8038c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

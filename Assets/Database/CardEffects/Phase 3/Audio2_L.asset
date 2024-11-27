@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: Audio2_L
   m_EditorClassIdentifier: 
-  EffectName: Mari kita beli alat-alat nya
+  EffectName: Let's buy the equipment.
   _effectStrategies:
   - rid: 941843089979342851
   references:
@@ -24,6 +24,6 @@ MonoBehaviour:
         EffectedScore:
           _serializedList:
           - Key: 7
-            Value: 50
+            Value: 20
           - Key: 12
             Value: -10

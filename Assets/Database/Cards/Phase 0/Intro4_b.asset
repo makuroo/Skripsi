@@ -17,9 +17,8 @@ MonoBehaviour:
   CardDescription: '~ Artist ~
 
 
-    Saya Agus, seorang seniman yang bertanggung
-    jawab untuk menciptakan visual game, mulai dari desain karakter, visual efek
-    hingga latar belakang.'
+    I''m Agus, the artist responsible for creating
+    the game''s visuals, including character designs, visual effects, and backgrounds.'
   CardSprite: {fileID: 21300000, guid: 769b041613cfc87439f37763a2195c57, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: d4fac6039dc7fcb4d8d54db81377e304, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

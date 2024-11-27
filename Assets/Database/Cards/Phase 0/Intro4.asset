@@ -17,9 +17,8 @@ MonoBehaviour:
   CardDescription: '~ Bruce ~
 
 
-    Di studio ini terdapat 5 orang yang terlibat
-    dalam pembuatan gamenya, termasuk saya. Apakah anda ingin bertemu dengan mereka
-    ?'
+    In this studio, there are 5 people involved in
+    making the games, including me. Would you like to meet them?'
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

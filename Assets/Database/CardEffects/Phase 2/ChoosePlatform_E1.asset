@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: ChoosePlatform_E1
   m_EditorClassIdentifier: 
-  EffectName: Komputer
+  EffectName: Computer.
   _effectStrategies:
   - rid: 4723801588163936267
   references:

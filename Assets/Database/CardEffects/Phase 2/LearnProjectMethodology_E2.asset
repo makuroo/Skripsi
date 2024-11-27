@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67492abb370a491c87b758d1f3822166, type: 3}
   m_Name: LearnProjectMethodology_E2
   m_EditorClassIdentifier: 
-  EffectName: Iya, saya mau pelajari hal tersebut.
+  EffectName: Yes, I want to learn about that.
   _effectStrategies:
   - rid: 4723801685960163330
   - rid: 4723801685960163331
