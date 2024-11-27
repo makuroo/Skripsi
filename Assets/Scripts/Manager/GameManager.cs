@@ -85,7 +85,7 @@ namespace Manager
             _ratingScore = CalculateRatingScore();
             _incomeScore = CalculateIncomeScore();
 
-            if (_scoreDictionary[ScoresEnum.FundScore] <= 0)
+            if (IsLost())
             {
                 UIManager.PlayerLose?.Invoke();
             }
@@ -113,5 +113,12 @@ namespace Manager
         private int CalculateIncomeScore() =>
             (int) (.4f * _scoreDictionary[ScoresEnum.MonetizationScore]) +
             (int)(.4f* _scoreDictionary[ScoresEnum.MarketingScore]) + (int)(.2f * RatingScore);
+
+        private bool IsLost() => _scoreDictionary[ScoresEnum.FundScore] == 0 ||
+                                _scoreDictionary[ScoresEnum.ArtistBurnout] == 100 ||
+                                _scoreDictionary[ScoresEnum.ProgrammerBurnout] == 100 ||
+                                _scoreDictionary[ScoresEnum.DesignerBurnout] == 100 ||
+                                _scoreDictionary[ScoresEnum.SoundEngineerBurnout] == 100;
+
     }
 }
