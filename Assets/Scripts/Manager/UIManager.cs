@@ -30,6 +30,10 @@ namespace Manager
         [SerializeField] private GameObject _playerWinPanel;
         [SerializeField] private TMP_Text _ratingScoreWin;
         [SerializeField] private TMP_Text _incomeScoreWin;
+
+        [Header("Game Phase")] 
+        [SerializeField] private TMP_Text _currentPhaseUI; 
+        
         public static Action<ScoresEnum, int> UpdateScoreUI;
         public static Action PlayerLose;
         public static Action PlayerWin;
@@ -39,6 +43,7 @@ namespace Manager
             UpdateScoreUI += OnUpdateScoreUI;
             PlayerWin += OnPlayerWin;
             PlayerLose += OnPlayerLose;
+            GameManager.OnStateChange += OnUpdateCurrentPhaseText;
         }
     
         private void OnDisable()
@@ -46,6 +51,7 @@ namespace Manager
             UpdateScoreUI -= OnUpdateScoreUI;
             PlayerWin -= OnPlayerWin;
             PlayerLose -= OnPlayerLose;
+            GameManager.OnStateChange -= OnUpdateCurrentPhaseText;
         }
     
         private void OnUpdateScoreUI(ScoresEnum scoresEnum, int value)
@@ -114,6 +120,11 @@ namespace Manager
 
             _index--;
             _tutorialImage.sprite = _tutorialSprites[_index];
+        }
+
+        private void OnUpdateCurrentPhaseText(State state)
+        {
+            _currentPhaseUI.text = state.ToString();
         }
     }
 }

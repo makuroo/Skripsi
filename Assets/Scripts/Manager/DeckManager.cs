@@ -54,13 +54,13 @@ namespace Manager
         private void OnEnable()
         {
             CardSwipe.OnUsedCard += UpdateDeck;
-            GameManager.OnStageChange += ChangeDeck;
+            GameManager.OnStateChange += ChangeDeck;
         }
 
         private void OnDisable()
         {
             CardSwipe.OnUsedCard -= UpdateDeck;
-            GameManager.OnStageChange -= ChangeDeck;
+            GameManager.OnStateChange -= ChangeDeck;
         }
 
         private void Awake()

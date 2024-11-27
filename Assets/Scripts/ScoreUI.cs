@@ -14,13 +14,10 @@ public class ScoreUI : MonoBehaviour
     private void Start()
     {
         _uiFillImage.fillAmount = _initialValue/100f;
-        _textUI.text = _initialValue.ToString();
     }
 
     public void UpdateUI(int value)
     {
-        _textUI.text = value.ToString();
-
         DOVirtual.Float(_uiFillImage.fillAmount, value / 100f, .5f, (x) =>
         {
             _uiFillImage.fillAmount = x;

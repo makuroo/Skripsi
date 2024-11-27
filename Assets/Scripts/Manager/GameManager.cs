@@ -55,7 +55,7 @@ namespace Manager
         public int RatingScore => _ratingScore;
         public int IncomeScore => _incomeScore;
 
-        public static Action<State> OnStageChange;
+        public static Action<State> OnStateChange;
 
         private void Awake()
         {
@@ -93,6 +93,7 @@ namespace Manager
 
         public void NextStage()
         {
+            
             if (CurrentState == State.Release)
             {
                 UIManager.PlayerWin?.Invoke();
@@ -100,7 +101,7 @@ namespace Manager
             }
 
             CurrentState++;
-            OnStageChange?.Invoke(CurrentState);
+            OnStateChange?.Invoke(CurrentState);
         }
 
         private int CalculateRatingScore() =>
