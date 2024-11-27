@@ -14,13 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   CardName: Intro0
-  CardDescription: '~ Bruce ~
-
-    Selamat datang di Sankapa Games !!
-
-
-    Perkenalkan
-    nama saya Bruce, saya adalah producer di studio ini.'
+  CardDescription: "~ Bruce ~\n\nWelcome to Sankapa Games!!\n\nMy name is Bruce,
+    and I\u2019m the producer at this studio."
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
