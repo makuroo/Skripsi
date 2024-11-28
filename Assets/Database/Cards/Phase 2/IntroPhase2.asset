@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   CardName: '-'
-  CardDescription: We are at the initiation phase. In this phase, we will define
-    the foundations of the game we want to build, such as the platform, genre, and
-    even how we will manage the project.
+  CardDescription: We are at the initiation phase. In this phase, we will plan and
+    define the foundations of the game we want to build, such as the platform, genre,
+    and even how we will manage the project.
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

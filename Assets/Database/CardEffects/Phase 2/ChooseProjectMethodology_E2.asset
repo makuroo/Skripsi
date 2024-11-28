@@ -22,5 +22,5 @@ MonoBehaviour:
       type: {class: DeckEffect, ns: Strategy, asm: Assembly-CSharp}
       data:
         _cardToAdd: {fileID: 11400000, guid: 735621c4941ecac419f2df403e6ca9f7, type: 2}
-        _targetIndex: 6
-        _targetState: 2
+        _targetIndex: 1
+        _targetState: 99
