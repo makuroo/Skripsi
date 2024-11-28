@@ -122,7 +122,38 @@ namespace Manager
 
         private void OnUpdateCurrentPhaseText(State state)
         {
-            _currentPhaseUI.text = state.ToString();
+            switch (state)
+            {
+                case State.Intro:
+                    _currentPhaseUI.text = "Introduction";
+                    break;
+                case State.MarketResearch:
+                    _currentPhaseUI.text = "Market Research";
+                    break;
+                case State.Initiation:
+                    _currentPhaseUI.text = "Initiation";
+                    break;
+                case State.PreProduction:
+                    _currentPhaseUI.text = "Pre-Production";
+                    break;
+                case State.Production:
+                    _currentPhaseUI.text = "Production";
+                    break;
+                case State.Testing:
+                    _currentPhaseUI.text = "Testing";
+                    break;
+                case State.Beta:
+                    _currentPhaseUI.text = "Beta";
+                    break;
+                case State.Release:
+                    _currentPhaseUI.text = "Release";
+                    break;
+                case State.None:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(state), state, null);
+            }
+           
         }
     }
 }
