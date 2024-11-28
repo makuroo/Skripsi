@@ -22,14 +22,13 @@ namespace Manager
         [Header("LosePanel")]
         [Space(5)]
         [SerializeField] private GameObject _gameOverPanel;
-        [SerializeField] private TMP_Text _ratingScoreLose;
-        [SerializeField] private TMP_Text _incomeScoreLose;
         
         [Header("WinPanel")]
         [Space(5)]
         [SerializeField] private GameObject _playerWinPanel;
         [SerializeField] private TMP_Text _ratingScoreWin;
         [SerializeField] private TMP_Text _incomeScoreWin;
+        [SerializeField] private TMP_Text _gradeText;
 
         [Header("Game Phase")] 
         [SerializeField] private TMP_Text _currentPhaseUI; 
@@ -65,8 +64,6 @@ namespace Manager
         private void OnPlayerLose()
         {
             Time.timeScale = 0;
-            _ratingScoreLose.text = GameManager.Instance.RatingScore.ToString();
-            _incomeScoreLose.text = GameManager.Instance.IncomeScore.ToString();
             _gameOverPanel.SetActive(true);
         }
     
@@ -75,6 +72,7 @@ namespace Manager
             Time.timeScale = 0;
             _ratingScoreWin.text = GameManager.Instance.RatingScore.ToString();
             _incomeScoreWin.text = GameManager.Instance.IncomeScore.ToString();
+            _gradeText.text = GameManager.Instance.CalculateGrade().ToString();
             _playerWinPanel.SetActive(true);
         }
 

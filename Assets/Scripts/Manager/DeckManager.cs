@@ -97,7 +97,6 @@ namespace Manager
 
         private void InitializeCurrentCard()
         {
-            Debug.Log(_currentHand);
             if (_currentHand == null)
             {
                 CardTemplate template = Instantiate(_cardPrefab, Vector3.zero, Quaternion.identity, _templateParent);

@@ -60,7 +60,7 @@ namespace Card
             }
             LeftOptionText.text = Definition.LeftEffect.EffectName;
             
-            if (_cardDefinition.CardSprite == null)
+            if (_cardDefinition.RightEffect == null)
             {
                 Debug.LogError(_cardDefinition+" "+"right effect is null");
             }

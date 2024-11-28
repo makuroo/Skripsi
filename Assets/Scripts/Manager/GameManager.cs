@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Linq;
 using AYellowpaper.SerializedCollections;
 using UnityEngine;
@@ -114,11 +115,23 @@ namespace Manager
             (int) (.4f * _scoreDictionary[ScoresEnum.MonetizationScore]) +
             (int)(.4f* _scoreDictionary[ScoresEnum.MarketingScore]) + (int)(.2f * RatingScore);
 
-        private bool IsLost() => _scoreDictionary[ScoresEnum.FundScore] == 0 ||
-                                _scoreDictionary[ScoresEnum.ArtistBurnout] == 100 ||
-                                _scoreDictionary[ScoresEnum.ProgrammerBurnout] == 100 ||
-                                _scoreDictionary[ScoresEnum.DesignerBurnout] == 100 ||
-                                _scoreDictionary[ScoresEnum.SoundEngineerBurnout] == 100;
+        private bool IsLost() => _scoreDictionary[ScoresEnum.FundScore] <= 0 ||
+                                _scoreDictionary[ScoresEnum.ArtistBurnout] >= 100 ||
+                                _scoreDictionary[ScoresEnum.ProgrammerBurnout] >= 100 ||
+                                _scoreDictionary[ScoresEnum.DesignerBurnout] >= 100 ||
+                                _scoreDictionary[ScoresEnum.SoundEngineerBurnout] >= 100;
 
+        public char CalculateGrade()
+        {
+            return (int)((_incomeScore * .5 + _ratingScore * .5) / 2) switch
+            {
+                > 95 => 'S',
+                >= 90 => 'A',
+                >= 80 => 'B',
+                >= 70 => 'C',
+                >= 50 => 'D',
+                < 50 => 'F'
+            };
+        }
     }
 }

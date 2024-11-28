@@ -55,11 +55,15 @@ namespace Card
 
         private void ResetTextOptionColor(TMP_Text text)
         {
-            text.color = new Color(0, 0, 0, 0);
+            text.color = new Color(1, 1, 1, 0);
         }
 
         private void OptionTextFade(TMP_Text text)
         {
+            ResetTextOptionColor(text == _cardTemplate.LeftOptionText
+                ? _cardTemplate.RightOptionText
+                : _cardTemplate.LeftOptionText);
+
             var color = text.color;
             color.a = Mathf.Abs(transform.localPosition.x) / 255;
             text.color = color;
