@@ -60,7 +60,15 @@ namespace Manager
             UpdateScoreIndicatorAlpha -= OnUpdateScoreIndicatorAlpha;
             GameManager.OnStateChange -= OnUpdateCurrentPhaseText;
         }
-    
+
+        private void Start()
+        {
+            foreach (var i in _scoreIndicatorDictionary.Values)
+            {
+                i.color = new Color(1, 1, 1, 0);
+            }
+        }
+
         private void OnUpdateScoreUI(ScoresEnum scoresEnum, int value)
         {
             if (_scoreUIDictionary.ContainsKey(scoresEnum))
