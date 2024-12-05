@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   CardName: '-'
-  CardDescription: Since the game is finished, it's time to implement various types
-    of monetization in the game.
+  CardDescription: Since the game is finished and in its beta state, it's time to
+    implement various types of monetization.
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}

@@ -13,7 +13,7 @@ namespace Manager
         Initiation=2,
         PreProduction=3,
         Production=4,
-        Alpha=5,
+        Testing=5,
         Beta=6,
         Release=7,
         None=99

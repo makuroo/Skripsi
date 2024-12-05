@@ -4103,36 +4103,11 @@ MonoBehaviour:
   _cardPoolDictionary:
     _serializedList:
     - Key: 0
-      Value:
-      - {fileID: 11400000, guid: 3345be01f1dbfc142b2c33c53e565a3e, type: 2}
-      - {fileID: 11400000, guid: ece157bc59c8540469a950cd7c2d3632, type: 2}
-      - {fileID: 11400000, guid: ab094dce9169c0d40b002db7316ede52, type: 2}
-      - {fileID: 11400000, guid: dc43833c5a5ce674aa996ee46d587524, type: 2}
-      - {fileID: 11400000, guid: 8c8ada939292d824da3ae0db6f8ec316, type: 2}
-      - {fileID: 11400000, guid: 5bfef61678304a140a70798df40667f5, type: 2}
-      - {fileID: 11400000, guid: 63acd1d55e743964f951e432ff8e1066, type: 2}
-      - {fileID: 11400000, guid: 51a37641661d9ec44919a5c7cf5f356f, type: 2}
-      - {fileID: 11400000, guid: 85dcbbd64756cb243978d482dcde37b2, type: 2}
-      - {fileID: 11400000, guid: d4f7bb5e67bcc7745a1a193e53f405d4, type: 2}
+      Value: []
     - Key: 1
-      Value:
-      - {fileID: 11400000, guid: 881f2f3fbbbf15a458cef3ef22a71303, type: 2}
-      - {fileID: 11400000, guid: 448c46d55c12b5d43ae6d880df78ef15, type: 2}
+      Value: []
     - Key: 2
-      Value:
-      - {fileID: 11400000, guid: 3e8d2e1ee2f2c944083e182a114bf618, type: 2}
-      - {fileID: 11400000, guid: e744f617536195c4d8607d70f5208eb6, type: 2}
-      - {fileID: 11400000, guid: 2711766074507574ba3c048083315d12, type: 2}
-      - {fileID: 11400000, guid: 735621c4941ecac419f2df403e6ca9f7, type: 2}
-      - {fileID: 11400000, guid: ac7cbbd3a35601440913cc23e0246536, type: 2}
-      - {fileID: 11400000, guid: 1d277aa2317c6364299b477ae8b33dd5, type: 2}
-      - {fileID: 11400000, guid: 6f8a44c5ef76ee5499bbee106eb5de10, type: 2}
-      - {fileID: 11400000, guid: 260c6bc98527e8744832c12ce5b94b25, type: 2}
-      - {fileID: 11400000, guid: 1affc044f238c524b8f0102e5d92278c, type: 2}
-      - {fileID: 11400000, guid: 2c1349a19c2a2704281ef9ebd284bd53, type: 2}
-      - {fileID: 11400000, guid: 4c0b4ad7c6278224db4de8cebde9061d, type: 2}
-      - {fileID: 11400000, guid: f52c8b06fc761c946b09ae858d583b08, type: 2}
-      - {fileID: 11400000, guid: f657f8c605c3d154aafd5be315730374, type: 2}
+      Value: []
     - Key: 3
       Value:
       - {fileID: 11400000, guid: ca627b441dbd9c14297d91d190101c50, type: 2}
@@ -4143,7 +4118,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 58cbe9d4e6b45d643b53e9279bac6e36, type: 2}
       - {fileID: 11400000, guid: c07a1a40ff1c16042b7d857c82c1b959, type: 2}
       - {fileID: 11400000, guid: 09384fec5060eff479c4e6d63d481e6b, type: 2}
-      - {fileID: 11400000, guid: ae3f9c1f131be4d47b993446e1ae3543, type: 2}
     - Key: 4
       Value:
       - {fileID: 11400000, guid: a4523298cd2ed174f9bebd80e75713fd, type: 2}
@@ -4153,29 +4127,15 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 70363eb7dce38e6409b171bac0622f23, type: 2}
       - {fileID: 11400000, guid: c66f9211ec402d645ba37aadf37a3dfc, type: 2}
       - {fileID: 11400000, guid: ff8a58016d2318341af1fd77779a6c1b, type: 2}
-      - {fileID: 11400000, guid: 92b1233dadff1904490aa229ac2fe10a, type: 2}
     - Key: 5
       Value:
-      - {fileID: 11400000, guid: 123a70f985aa74e48a1552bc51559637, type: 2}
       - {fileID: 11400000, guid: 64b8fe0790c134e49a872783cde0358f, type: 2}
       - {fileID: 11400000, guid: acd0b7585e6b64e4cb6ac868b4c42ce2, type: 2}
       - {fileID: 11400000, guid: d9fad477e38a82d459e8ce67714e5647, type: 2}
     - Key: 6
-      Value:
-      - {fileID: 11400000, guid: eb3ea648d37f7884a8a73e16a17fc96a, type: 2}
-      - {fileID: 11400000, guid: 5ec334d11bb91a644bd1f5e848f9c0dc, type: 2}
-      - {fileID: 11400000, guid: 57b37fa9c2b5f5b42b0adc0ca37b5831, type: 2}
-      - {fileID: 11400000, guid: 83debe9b1594ef948ae0497e2e796a5e, type: 2}
-      - {fileID: 11400000, guid: 5dafbfc094b264d47bd564521c4fcb0b, type: 2}
-      - {fileID: 11400000, guid: 4d5ace2352287f3418a3ff89ca0b5c88, type: 2}
-      - {fileID: 11400000, guid: 2da1651176d6b1b49aa073f51da42e8e, type: 2}
+      Value: []
     - Key: 7
-      Value:
-      - {fileID: 11400000, guid: 537bba09af49713478863ff90b833aa9, type: 2}
-      - {fileID: 11400000, guid: 8e0eec1ce714227499f4ef3fea8a12bd, type: 2}
-      - {fileID: 11400000, guid: 7b6aba55311b32844ae555758be23491, type: 2}
-      - {fileID: 11400000, guid: e9d60a98a19907b4c99b6291e82b9828, type: 2}
-      - {fileID: 11400000, guid: b7a6e6aea2aefe749a5627d59f9c990f, type: 2}
+      Value: []
 --- !u!1 &1064836817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,7 +4784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618bcc2c73ef8ae43965bf804d636c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentState: 7
+  _currentState: 0
   _scoreDictionary:
     _serializedList:
     - Key: 4
