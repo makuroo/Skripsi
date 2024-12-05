@@ -136,6 +136,11 @@ namespace Manager
             _tutorialImage.sprite = _tutorialSprites[_index];
         }
 
+        public void CloseHowToPlay()
+        {
+            _howToPlayPanel.SetActive(false);
+        }
+
         private void OnUpdateCurrentPhaseText(State state)
         {
             switch (state)
