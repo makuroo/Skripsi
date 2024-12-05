@@ -19,5 +19,21 @@ namespace Card
                 e?.Activate();
             }
         }
+
+        public void UpdateIndicator(float alpha)
+        {
+            foreach (var e in _effectStrategies)
+            {
+                e?.UpdateIndicatorImage(alpha);
+            }
+        }
+
+        public void ResetIndicator()
+        {
+            foreach (var e in _effectStrategies)
+            {
+                e?.ResetIndicatorImage();
+            }
+        }
     }
 }

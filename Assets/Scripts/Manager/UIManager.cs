@@ -19,6 +19,8 @@ namespace Manager
         
         [Space(5)]
         [SerializeField] private SerializedDictionary<ScoresEnum, ScoreUI> _scoreUIDictionary = new();
+        [SerializeField] private SerializedDictionary<ScoresEnum, Image> _scoreIndicatorDictionary = new();
+        
         [Header("LosePanel")]
         [Space(5)]
         [SerializeField] private GameObject _gameOverPanel;
@@ -36,12 +38,17 @@ namespace Manager
         public static Action<ScoresEnum, int> UpdateScoreUI;
         public static Action PlayerLose;
         public static Action PlayerWin;
-    
+
+        public static Action<ScoresEnum, float> UpdateScoreIndicatorAlpha;
+
+        public SerializedDictionary<ScoresEnum, Image> ScoreIndicatorDictionary => _scoreIndicatorDictionary;
+
         private void OnEnable()
         {
             UpdateScoreUI += OnUpdateScoreUI;
             PlayerWin += OnPlayerWin;
             PlayerLose += OnPlayerLose;
+            UpdateScoreIndicatorAlpha += OnUpdateScoreIndicatorAlpha;
             GameManager.OnStateChange += OnUpdateCurrentPhaseText;
         }
     
@@ -50,6 +57,7 @@ namespace Manager
             UpdateScoreUI -= OnUpdateScoreUI;
             PlayerWin -= OnPlayerWin;
             PlayerLose -= OnPlayerLose;
+            UpdateScoreIndicatorAlpha -= OnUpdateScoreIndicatorAlpha;
             GameManager.OnStateChange -= OnUpdateCurrentPhaseText;
         }
     
@@ -123,6 +131,13 @@ namespace Manager
         private void OnUpdateCurrentPhaseText(State state)
         {
             _currentPhaseUI.text = state.ToString();
+        }
+
+        private void OnUpdateScoreIndicatorAlpha(ScoresEnum scoresEnum, float alphaAmount)
+        {
+            var color = ScoreIndicatorDictionary[scoresEnum].color;
+            color.a = alphaAmount;
+            ScoreIndicatorDictionary[scoresEnum].color = color;  
         }
     }
 }

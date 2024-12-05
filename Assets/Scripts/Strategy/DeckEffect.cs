@@ -14,5 +14,15 @@ namespace Strategy
         {
             DeckManager.Instance.InsertCardToDeck(_targetState,_targetIndex,_cardToAdd);
         }
+
+        public override void UpdateIndicatorImage(float alphaAmount)
+        {
+          
+        }
+
+        public override void ResetIndicatorImage()
+        {
+      
+        }
     }
 }

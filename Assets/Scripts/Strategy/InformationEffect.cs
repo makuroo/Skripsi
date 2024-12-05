@@ -13,5 +13,15 @@ namespace Strategy
         {
            Object.Instantiate(_informationPanel,Vector3.zero, Quaternion.identity);
         }
+
+        public override void UpdateIndicatorImage(float alphaAmount)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void ResetIndicatorImage()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -45,8 +45,9 @@ namespace Manager
         public static GameManager Instance { get; private set; }
 
         [SerializeField] private int _ratingScore;
-        [SerializeField] private int _incomeScore; 
+        [SerializeField] private int _incomeScore;
 
+        [SerializeField] private UIManager _uiManager;
         public State CurrentState
         {
             get => _currentState;
@@ -55,6 +56,8 @@ namespace Manager
 
         public int RatingScore => _ratingScore;
         public int IncomeScore => _incomeScore;
+
+        public UIManager UIManager => _uiManager;
 
         public static Action<State> OnStateChange;
 
