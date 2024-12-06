@@ -12,7 +12,7 @@ namespace Manager
     public class UIManager : MonoBehaviour
     {
         [Header("Main Menu")] 
-        [SerializeField] private List<Sprite> _tutorialSprites = new();
+        [SerializeField] private List<GameObject> _tutorialGameObjects = new();
         [SerializeField] private Image _tutorialImage;
         [SerializeField] private GameObject _howToPlayPanel;
         private int _index;
@@ -111,18 +111,23 @@ namespace Manager
         public void HowToPlay()
         {
             _index = 0;
+            foreach (var go in _tutorialGameObjects)
+            {
+                go.SetActive(false);
+            }
+            _tutorialGameObjects[0].SetActive(true);
             _howToPlayPanel.SetActive(!_howToPlayPanel.activeSelf);
         }
 
         public void Next()
         {
-            if (_index == _tutorialSprites.Count - 1)
+            if (_index == _tutorialGameObjects.Count - 1)
             {
                 return;
             }
-
+            _tutorialGameObjects[_index].SetActive(false);
             _index++;
-            _tutorialImage.sprite = _tutorialSprites[_index];
+            _tutorialGameObjects[_index].SetActive(true);
         }
         
         public void Previous()
@@ -132,8 +137,9 @@ namespace Manager
                 return;
             }
 
+            _tutorialGameObjects[_index].SetActive(false);
             _index--;
-            _tutorialImage.sprite = _tutorialSprites[_index];
+            _tutorialGameObjects[_index].SetActive(true);
         }
 
         public void CloseHowToPlay()
