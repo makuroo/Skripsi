@@ -889,7 +889,7 @@ MonoBehaviour:
           Index: 6
     - Key: 7
       Value:
-        TotalCards: 5
+        TotalCards: 7
         FixedCardsList:
         - Card: {fileID: 11400000, guid: 537bba09af49713478863ff90b833aa9, type: 2}
           Index: 0
@@ -901,6 +901,10 @@ MonoBehaviour:
           Index: 3
         - Card: {fileID: 11400000, guid: b7a6e6aea2aefe749a5627d59f9c990f, type: 2}
           Index: 4
+        - Card: {fileID: 11400000, guid: e4980fa854667314492d3d69cdddb7c8, type: 2}
+          Index: 5
+        - Card: {fileID: 11400000, guid: ae82a3548919f9e4c81c7762a5cf1ad5, type: 2}
+          Index: 6
   currentDeck: []
 --- !u!4 &112943873
 Transform:
@@ -2175,7 +2179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79168a20176146a44980e08795bdb199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tutorialSprites: []
+  _tutorialGameObjects: []
   _tutorialImage: {fileID: 0}
   _howToPlayPanel: {fileID: 0}
   _scoreUIDictionary:

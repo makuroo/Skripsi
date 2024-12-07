@@ -15,7 +15,8 @@ MonoBehaviour:
   Type: 3
   CardName: Belajar Kanban
   CardDescription: Kanban is a visual method where tasks are divided into columns
-    based on their status.
+    based on their status and there is a maximum number of tasks that can be worked
+    on at a time.
   CardSprite: {fileID: 21300000, guid: e495f8e3dede5454896b471ffc8f4b07, type: 3}
   CardBackgroundSprite: {fileID: 21300000, guid: 5007d1b4a70c335419df1a4ae0c90d7c, type: 3}
   CardBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
