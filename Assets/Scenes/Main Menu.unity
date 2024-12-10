@@ -4611,7 +4611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME DEV DECISION
+  m_text: GAME DEV DILEMMAS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c81a6fc1b9f4d429334cfedf6fcd97, type: 2}
   m_sharedMaterial: {fileID: -7687454828275401424, guid: 90c81a6fc1b9f4d429334cfedf6fcd97, type: 2}
