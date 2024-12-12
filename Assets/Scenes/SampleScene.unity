@@ -871,7 +871,7 @@ MonoBehaviour:
           Index: 0
     - Key: 6
       Value:
-        TotalCards: 7
+        TotalCards: 8
         FixedCardsList:
         - Card: {fileID: 11400000, guid: eb3ea648d37f7884a8a73e16a17fc96a, type: 2}
           Index: 0
@@ -887,9 +887,11 @@ MonoBehaviour:
           Index: 5
         - Card: {fileID: 11400000, guid: 2da1651176d6b1b49aa073f51da42e8e, type: 2}
           Index: 6
+        - Card: {fileID: 11400000, guid: 85ce7546ed98f6148b0f4b92634119d0, type: 2}
+          Index: 7
     - Key: 7
       Value:
-        TotalCards: 7
+        TotalCards: 8
         FixedCardsList:
         - Card: {fileID: 11400000, guid: 537bba09af49713478863ff90b833aa9, type: 2}
           Index: 0
@@ -903,8 +905,10 @@ MonoBehaviour:
           Index: 4
         - Card: {fileID: 11400000, guid: e4980fa854667314492d3d69cdddb7c8, type: 2}
           Index: 5
-        - Card: {fileID: 11400000, guid: ae82a3548919f9e4c81c7762a5cf1ad5, type: 2}
+        - Card: {fileID: 11400000, guid: 64e7c0e7f56e534408f9f40d507d0383, type: 2}
           Index: 6
+        - Card: {fileID: 11400000, guid: ae82a3548919f9e4c81c7762a5cf1ad5, type: 2}
+          Index: 7
   currentDeck: []
 --- !u!4 &112943873
 Transform:
