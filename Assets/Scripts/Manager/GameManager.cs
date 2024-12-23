@@ -126,7 +126,7 @@ namespace Manager
 
         public char CalculateGrade()
         {
-            return (int)((_incomeScore * .5 + _ratingScore * .5) / 2) switch
+            return (int)(_incomeScore * .5 + _ratingScore * .5) switch
             {
                 > 95 => 'S',
                 >= 90 => 'A',
