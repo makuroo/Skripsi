@@ -21,7 +21,8 @@ MonoBehaviour:
     - rid: 134022297412435969
       type: {class: ScoreEffect, ns: Strategy, asm: Assembly-CSharp}
       data:
+        _indicatorImage: {fileID: 0}
         EffectedScore:
           _serializedList:
           - Key: 7
-            Value: 5
+            Value: 10
